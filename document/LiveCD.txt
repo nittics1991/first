@@ -1,0 +1,3 @@
+Ubuntu Weekly Recipe 第3回　Desktop CDを使いこなす（2）：より高度なLiveCDのカスタマイズ
+
+http://gihyo.jp/admin/serial/01/ubuntu-recipe/0003
