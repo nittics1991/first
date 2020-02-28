@@ -1,0 +1,1263 @@
+-- Logs begin at Sat 2020-02-29 05:12:10 JST, end at Sat 2020-02-29 05:27:10 JST. --
+ 2月 29 05:12:10 localhost.localdomain kernel: Linux version 5.4.0-4-amd64 (debian-kernel@lists.debian.org) (gcc version 9.2.1 20200203 (Debian 9.2.1-28)) #1 SMP Debian 5.4.19-1 (2020-02-13)
+ 2月 29 05:12:10 localhost.localdomain kernel: Command line: BOOT_IMAGE=/live/vmlinuz-5.4.0-4-amd64 boot=live live-config.locales=ja_JP.UTF-8 live-config.timezone=Asia/Tokyo live-config.keyboard-model=jp106 live-config.keyboard-layouts=jp findiso= persistence
+ 2月 29 05:12:10 localhost.localdomain kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+ 2月 29 05:12:10 localhost.localdomain kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+ 2月 29 05:12:10 localhost.localdomain kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+ 2月 29 05:12:10 localhost.localdomain kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+ 2月 29 05:12:10 localhost.localdomain kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS-provided physical RAM map:
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS-e820: [mem 0x0000000000100000-0x000000005e254fff] usable
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS-e820: [mem 0x000000005e255000-0x000000005e255fff] ACPI data
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS-e820: [mem 0x000000005e256000-0x000000005f2d5fff] usable
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS-e820: [mem 0x000000005f2d6000-0x000000005f305fff] type 20
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS-e820: [mem 0x000000005f306000-0x000000005f32dfff] reserved
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS-e820: [mem 0x000000005f32e000-0x000000005f335fff] ACPI data
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS-e820: [mem 0x000000005f336000-0x000000005f339fff] ACPI NVS
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS-e820: [mem 0x000000005f33a000-0x000000005f3bffff] usable
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS-e820: [mem 0x000000005f3c0000-0x000000005f3dffff] reserved
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS-e820: [mem 0x000000005f3e0000-0x000000005f3effff] usable
+ 2月 29 05:12:10 localhost.localdomain kernel: NX (Execute Disable) protection: active
+ 2月 29 05:12:10 localhost.localdomain kernel: efi: EFI v2.40 by EDK II
+ 2月 29 05:12:10 localhost.localdomain kernel: efi:  ACPI=0x5f335000  ACPI 2.0=0x5f335014  SMBIOS=0x5f338000  MPS=0x5f337000 
+ 2月 29 05:12:10 localhost.localdomain kernel: secureboot: Secure boot could not be determined (mode 0)
+ 2月 29 05:12:10 localhost.localdomain kernel: SMBIOS 2.5 present.
+ 2月 29 05:12:10 localhost.localdomain kernel: DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+ 2月 29 05:12:10 localhost.localdomain kernel: Hypervisor detected: KVM
+ 2月 29 05:12:10 localhost.localdomain kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+ 2月 29 05:12:10 localhost.localdomain kernel: kvm-clock: cpu 0, msr d421001, primary cpu clock
+ 2月 29 05:12:10 localhost.localdomain kernel: kvm-clock: using sched offset of 39433371335 cycles
+ 2月 29 05:12:10 localhost.localdomain kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+ 2月 29 05:12:10 localhost.localdomain kernel: tsc: Detected 1347.477 MHz processor
+ 2月 29 05:12:10 localhost.localdomain kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+ 2月 29 05:12:10 localhost.localdomain kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+ 2月 29 05:12:10 localhost.localdomain kernel: last_pfn = 0x5f3f0 max_arch_pfn = 0x400000000
+ 2月 29 05:12:10 localhost.localdomain kernel: MTRR default type: uncachable
+ 2月 29 05:12:10 localhost.localdomain kernel: MTRR variable ranges disabled:
+ 2月 29 05:12:10 localhost.localdomain kernel: Disabled
+ 2月 29 05:12:10 localhost.localdomain kernel: x86/PAT: MTRRs disabled, skipping PAT initialization too.
+ 2月 29 05:12:10 localhost.localdomain kernel: CPU MTRRs all blank - virtualized system.
+ 2月 29 05:12:10 localhost.localdomain kernel: x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+ 2月 29 05:12:10 localhost.localdomain kernel: found SMP MP-table at [mem 0x0009fff0-0x0009ffff]
+ 2月 29 05:12:10 localhost.localdomain kernel: BRK [0x0d601000, 0x0d601fff] PGTABLE
+ 2月 29 05:12:10 localhost.localdomain kernel: BRK [0x0d602000, 0x0d602fff] PGTABLE
+ 2月 29 05:12:10 localhost.localdomain kernel: BRK [0x0d603000, 0x0d603fff] PGTABLE
+ 2月 29 05:12:10 localhost.localdomain kernel: BRK [0x0d604000, 0x0d604fff] PGTABLE
+ 2月 29 05:12:10 localhost.localdomain kernel: BRK [0x0d605000, 0x0d605fff] PGTABLE
+ 2月 29 05:12:10 localhost.localdomain kernel: BRK [0x0d606000, 0x0d606fff] PGTABLE
+ 2月 29 05:12:10 localhost.localdomain kernel: BRK [0x0d607000, 0x0d607fff] PGTABLE
+ 2月 29 05:12:10 localhost.localdomain kernel: RAMDISK: [mem 0x307eb000-0x343ecfff]
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Early table checksum verification disabled
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: RSDP 0x000000005F335014 000024 (v02 VBOX  )
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: XSDT 0x000000005F3340E8 000044 (v01 VBOX   VBOXFACP 00000001      01000013)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: FACP 0x000000005F332000 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: DSDT 0x000000005F32F000 0021FF (v02 VBOX   VBOXBIOS 00000002 INTL 20180105)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: FACS 0x000000005F339000 000040
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: FACS 0x000000005F3F0200 000040
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: APIC 0x000000005F333000 000054 (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: SSDT 0x000000005F32E000 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20180105)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: BGRT 0x000000005E255000 000038 (v01 INTEL  EDK2     00000002      01000013)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Local APIC address 0xfee00000
+ 2月 29 05:12:10 localhost.localdomain kernel: No NUMA configuration found
+ 2月 29 05:12:10 localhost.localdomain kernel: Faking a node at [mem 0x0000000000000000-0x000000005f3effff]
+ 2月 29 05:12:10 localhost.localdomain kernel: NODE_DATA(0) allocated [mem 0x5f3eb000-0x5f3effff]
+ 2月 29 05:12:10 localhost.localdomain kernel: Zone ranges:
+ 2月 29 05:12:10 localhost.localdomain kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+ 2月 29 05:12:10 localhost.localdomain kernel:   DMA32    [mem 0x0000000001000000-0x000000005f3effff]
+ 2月 29 05:12:10 localhost.localdomain kernel:   Normal   empty
+ 2月 29 05:12:10 localhost.localdomain kernel:   Device   empty
+ 2月 29 05:12:10 localhost.localdomain kernel: Movable zone start for each node
+ 2月 29 05:12:10 localhost.localdomain kernel: Early memory node ranges
+ 2月 29 05:12:10 localhost.localdomain kernel:   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+ 2月 29 05:12:10 localhost.localdomain kernel:   node   0: [mem 0x0000000000100000-0x000000005e254fff]
+ 2月 29 05:12:10 localhost.localdomain kernel:   node   0: [mem 0x000000005e256000-0x000000005f2d5fff]
+ 2月 29 05:12:10 localhost.localdomain kernel:   node   0: [mem 0x000000005f33a000-0x000000005f3bffff]
+ 2月 29 05:12:10 localhost.localdomain kernel:   node   0: [mem 0x000000005f3e0000-0x000000005f3effff]
+ 2月 29 05:12:10 localhost.localdomain kernel: Zeroed struct page in unavailable ranges: 3318 pages
+ 2月 29 05:12:10 localhost.localdomain kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000005f3effff]
+ 2月 29 05:12:10 localhost.localdomain kernel: On node 0 totalpages: 389898
+ 2月 29 05:12:10 localhost.localdomain kernel:   DMA zone: 64 pages used for memmap
+ 2月 29 05:12:10 localhost.localdomain kernel:   DMA zone: 23 pages reserved
+ 2月 29 05:12:10 localhost.localdomain kernel:   DMA zone: 3999 pages, LIFO batch:0
+ 2月 29 05:12:10 localhost.localdomain kernel:   DMA32 zone: 6032 pages used for memmap
+ 2月 29 05:12:10 localhost.localdomain kernel:   DMA32 zone: 385899 pages, LIFO batch:63
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: PM-Timer IO Port: 0x4008
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Local APIC address 0xfee00000
+ 2月 29 05:12:10 localhost.localdomain kernel: IOAPIC[0]: apic_id 1, version 32, address 0xfec00000, GSI 0-23
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: IRQ0 used by override.
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: IRQ9 used by override.
+ 2月 29 05:12:10 localhost.localdomain kernel: Using ACPI (MADT) for SMP configuration information
+ 2月 29 05:12:10 localhost.localdomain kernel: e820: update [mem 0x5e74b000-0x5e765fff] usable ==> reserved
+ 2月 29 05:12:10 localhost.localdomain kernel: smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+ 2月 29 05:12:10 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+ 2月 29 05:12:10 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+ 2月 29 05:12:10 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x5e255000-0x5e255fff]
+ 2月 29 05:12:10 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x5e74b000-0x5e765fff]
+ 2月 29 05:12:10 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x5f2d6000-0x5f305fff]
+ 2月 29 05:12:10 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x5f306000-0x5f32dfff]
+ 2月 29 05:12:10 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x5f32e000-0x5f335fff]
+ 2月 29 05:12:10 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x5f336000-0x5f339fff]
+ 2月 29 05:12:10 localhost.localdomain kernel: PM: Registered nosave memory: [mem 0x5f3c0000-0x5f3dffff]
+ 2月 29 05:12:10 localhost.localdomain kernel: [mem 0x5f3f0000-0xffffffff] available for PCI devices
+ 2月 29 05:12:10 localhost.localdomain kernel: Booting paravirtualized kernel on KVM
+ 2月 29 05:12:10 localhost.localdomain kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+ 2月 29 05:12:10 localhost.localdomain kernel: setup_percpu: NR_CPUS:512 nr_cpumask_bits:512 nr_cpu_ids:1 nr_node_ids:1
+ 2月 29 05:12:10 localhost.localdomain kernel: percpu: Embedded 53 pages/cpu s178584 r8192 d30312 u2097152
+ 2月 29 05:12:10 localhost.localdomain kernel: pcpu-alloc: s178584 r8192 d30312 u2097152 alloc=1*2097152
+ 2月 29 05:12:10 localhost.localdomain kernel: pcpu-alloc: [0] 0 
+ 2月 29 05:12:10 localhost.localdomain kernel: Built 1 zonelists, mobility grouping on.  Total pages: 383779
+ 2月 29 05:12:10 localhost.localdomain kernel: Policy zone: DMA32
+ 2月 29 05:12:10 localhost.localdomain kernel: Kernel command line: BOOT_IMAGE=/live/vmlinuz-5.4.0-4-amd64 boot=live live-config.locales=ja_JP.UTF-8 live-config.timezone=Asia/Tokyo live-config.keyboard-model=jp106 live-config.keyboard-layouts=jp findiso= persistence
+ 2月 29 05:12:10 localhost.localdomain kernel: Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+ 2月 29 05:12:10 localhost.localdomain kernel: Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+ 2月 29 05:12:10 localhost.localdomain kernel: mem auto-init: stack:off, heap alloc:off, heap free:off
+ 2月 29 05:12:10 localhost.localdomain kernel: Calgary: detecting Calgary via BIOS EBDA area
+ 2月 29 05:12:10 localhost.localdomain kernel: Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+ 2月 29 05:12:10 localhost.localdomain kernel: Memory: 1424064K/1559592K available (10243K kernel code, 1197K rwdata, 3736K rodata, 1672K init, 2048K bss, 135528K reserved, 0K cma-reserved)
+ 2月 29 05:12:10 localhost.localdomain kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+ 2月 29 05:12:10 localhost.localdomain kernel: ftrace: allocating 33946 entries in 133 pages
+ 2月 29 05:12:10 localhost.localdomain kernel: rcu: Hierarchical RCU implementation.
+ 2月 29 05:12:10 localhost.localdomain kernel: rcu:         RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=1.
+ 2月 29 05:12:10 localhost.localdomain kernel: rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+ 2月 29 05:12:10 localhost.localdomain kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+ 2月 29 05:12:10 localhost.localdomain kernel: NR_IRQS: 33024, nr_irqs: 256, preallocated irqs: 16
+ 2月 29 05:12:10 localhost.localdomain kernel: random: crng done (trusting CPU's manufacturer)
+ 2月 29 05:12:10 localhost.localdomain kernel: Console: colour dummy device 80x25
+ 2月 29 05:12:10 localhost.localdomain kernel: printk: console [tty0] enabled
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Core revision 20190816
+ 2月 29 05:12:10 localhost.localdomain kernel: APIC: Switch to symmetric I/O mode setup
+ 2月 29 05:12:10 localhost.localdomain kernel: x2apic enabled
+ 2月 29 05:12:10 localhost.localdomain kernel: Switched APIC routing to physical x2apic.
+ 2月 29 05:12:10 localhost.localdomain kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+ 2月 29 05:12:10 localhost.localdomain kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x136c4fb839a, max_idle_ns: 440795207143 ns
+ 2月 29 05:12:10 localhost.localdomain kernel: Calibrating delay loop (skipped) preset value.. 2694.95 BogoMIPS (lpj=5389908)
+ 2月 29 05:12:10 localhost.localdomain kernel: pid_max: default: 32768 minimum: 301
+ 2月 29 05:12:10 localhost.localdomain kernel: LSM: Security Framework initializing
+ 2月 29 05:12:10 localhost.localdomain kernel: Yama: disabled by default; enable with sysctl kernel.yama.*
+ 2月 29 05:12:10 localhost.localdomain kernel: AppArmor: AppArmor initialized
+ 2月 29 05:12:10 localhost.localdomain kernel: TOMOYO Linux initialized
+ 2月 29 05:12:10 localhost.localdomain kernel: Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+ 2月 29 05:12:10 localhost.localdomain kernel: Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+ 2月 29 05:12:10 localhost.localdomain kernel: BIOS may not properly restore RDRAND after suspend, but hypervisor does not support hiding RDRAND via CPUID.
+ 2月 29 05:12:10 localhost.localdomain kernel: Last level iTLB entries: 4KB 512, 2MB 8, 4MB 4
+ 2月 29 05:12:10 localhost.localdomain kernel: Last level dTLB entries: 4KB 512, 2MB 256, 4MB 128, 1GB 0
+ 2月 29 05:12:10 localhost.localdomain kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+ 2月 29 05:12:10 localhost.localdomain kernel: Spectre V2 : Mitigation: Full AMD retpoline
+ 2月 29 05:12:10 localhost.localdomain kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+ 2月 29 05:12:10 localhost.localdomain kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+ 2月 29 05:12:10 localhost.localdomain kernel: Freeing SMP alternatives memory: 24K
+ 2月 29 05:12:10 localhost.localdomain kernel: smpboot: CPU0: AMD E1-6010 APU with AMD Radeon R2 Graphics (family: 0x16, model: 0x30, stepping: 0x1)
+ 2月 29 05:12:10 localhost.localdomain kernel: Performance Events: PMU not available due to virtualization, using software events only.
+ 2月 29 05:12:10 localhost.localdomain kernel: rcu: Hierarchical SRCU implementation.
+ 2月 29 05:12:10 localhost.localdomain kernel: NMI watchdog: Perf NMI watchdog permanently disabled
+ 2月 29 05:12:10 localhost.localdomain kernel: smp: Bringing up secondary CPUs ...
+ 2月 29 05:12:10 localhost.localdomain kernel: smp: Brought up 1 node, 1 CPU
+ 2月 29 05:12:10 localhost.localdomain kernel: smpboot: Max logical packages: 1
+ 2月 29 05:12:10 localhost.localdomain kernel: smpboot: Total of 1 processors activated (2694.95 BogoMIPS)
+ 2月 29 05:12:10 localhost.localdomain kernel: devtmpfs: initialized
+ 2月 29 05:12:10 localhost.localdomain kernel: x86/mm: Memory block size: 128MB
+ 2月 29 05:12:10 localhost.localdomain kernel: PM: Registering ACPI NVS region [mem 0x5f336000-0x5f339fff] (16384 bytes)
+ 2月 29 05:12:10 localhost.localdomain kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+ 2月 29 05:12:10 localhost.localdomain kernel: futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+ 2月 29 05:12:10 localhost.localdomain kernel: pinctrl core: initialized pinctrl subsystem
+ 2月 29 05:12:10 localhost.localdomain kernel: NET: Registered protocol family 16
+ 2月 29 05:12:10 localhost.localdomain kernel: audit: initializing netlink subsys (disabled)
+ 2月 29 05:12:10 localhost.localdomain kernel: cpuidle: using governor ladder
+ 2月 29 05:12:10 localhost.localdomain kernel: cpuidle: using governor menu
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: bus type PCI registered
+ 2月 29 05:12:10 localhost.localdomain kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+ 2月 29 05:12:10 localhost.localdomain kernel: PCI: Using configuration type 1 for base access
+ 2月 29 05:12:10 localhost.localdomain kernel: PCI: Using configuration type 1 for extended access
+ 2月 29 05:12:10 localhost.localdomain kernel: audit: type=2000 audit(1582920744.180:1): state=initialized audit_enabled=0 res=1
+ 2月 29 05:12:10 localhost.localdomain kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Added _OSI(Module Device)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Added _OSI(Processor Device)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Added _OSI(Processor Aggregator Device)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Added _OSI(Linux-Dell-Video)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: 2 ACPI AML tables successfully acquired and loaded
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Interpreter enabled
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: (supports S0 S5)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Using IOAPIC for interrupt routing
+ 2月 29 05:12:10 localhost.localdomain kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Enabled 2 GPEs in block 00 to 07
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+ 2月 29 05:12:10 localhost.localdomain kernel: acpi PNP0A03:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+ 2月 29 05:12:10 localhost.localdomain kernel: acpi PNP0A03:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR]
+ 2月 29 05:12:10 localhost.localdomain kernel: PCI host bridge to bus 0000:00
+ 2月 29 05:12:10 localhost.localdomain kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci_bus 0000:00: root bus resource [mem 0x5f400000-0xfdffffff window]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:01.1: reg 0x20: [io  0xc170-0xc17f]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:02.0: [80ee:beef] type 00 class 0x030000
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:02.0: reg 0x10: [mem 0x80000000-0x80ffffff pref]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:02.0: BAR 0: assigned to efifb
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:03.0: reg 0x10: [mem 0x81400000-0x8141ffff]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:03.0: reg 0x18: [io  0xc190-0xc197]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:04.0: reg 0x10: [io  0xc140-0xc15f]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:04.0: reg 0x14: [mem 0x81000000-0x813fffff]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:04.0: reg 0x18: [mem 0x81420000-0x81423fff pref]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:05.0: reg 0x10: [io  0xc000-0xc0ff]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:05.0: reg 0x14: [io  0xc100-0xc13f]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:06.0: reg 0x10: [mem 0x81426000-0x81426fff]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:0d.0: reg 0x10: [io  0xc188-0xc18f]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:0d.0: reg 0x14: [io  0xc19c-0xc19f]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:0d.0: reg 0x18: [io  0xc180-0xc187]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:0d.0: reg 0x1c: [io  0xc198-0xc19b]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:0d.0: reg 0x20: [io  0xc160-0xc16f]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:0d.0: reg 0x24: [mem 0x81424000-0x81425fff]
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 10 *11)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 5 9 *10 11)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 *10 11)
+ 2月 29 05:12:10 localhost.localdomain kernel: iommu: Default domain type: Translated 
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+ 2月 29 05:12:10 localhost.localdomain kernel: vgaarb: loaded
+ 2月 29 05:12:10 localhost.localdomain kernel: EDAC MC: Ver: 3.0.0
+ 2月 29 05:12:10 localhost.localdomain kernel: Registered efivars operations
+ 2月 29 05:12:10 localhost.localdomain kernel: PCI: Using ACPI for IRQ routing
+ 2月 29 05:12:10 localhost.localdomain kernel: PCI: pci_cache_line_size set to 64 bytes
+ 2月 29 05:12:10 localhost.localdomain kernel: e820: reserve RAM buffer [mem 0x5e255000-0x5fffffff]
+ 2月 29 05:12:10 localhost.localdomain kernel: e820: reserve RAM buffer [mem 0x5e74b000-0x5fffffff]
+ 2月 29 05:12:10 localhost.localdomain kernel: e820: reserve RAM buffer [mem 0x5f2d6000-0x5fffffff]
+ 2月 29 05:12:10 localhost.localdomain kernel: e820: reserve RAM buffer [mem 0x5f3c0000-0x5fffffff]
+ 2月 29 05:12:10 localhost.localdomain kernel: e820: reserve RAM buffer [mem 0x5f3f0000-0x5fffffff]
+ 2月 29 05:12:10 localhost.localdomain kernel: clocksource: Switched to clocksource kvm-clock
+ 2月 29 05:12:10 localhost.localdomain kernel: VFS: Disk quotas dquot_6.6.0
+ 2月 29 05:12:10 localhost.localdomain kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+ 2月 29 05:12:10 localhost.localdomain kernel: AppArmor: AppArmor Filesystem Enabled
+ 2月 29 05:12:10 localhost.localdomain kernel: pnp: PnP ACPI init
+ 2月 29 05:12:10 localhost.localdomain kernel: pnp 00:00: Plug and Play ACPI device, IDs PNP0303 (active)
+ 2月 29 05:12:10 localhost.localdomain kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0f03 (active)
+ 2月 29 05:12:10 localhost.localdomain kernel: pnp: PnP ACPI: found 2 devices
+ 2月 29 05:12:10 localhost.localdomain kernel: thermal_sys: Registered thermal governor 'fair_share'
+ 2月 29 05:12:10 localhost.localdomain kernel: thermal_sys: Registered thermal governor 'bang_bang'
+ 2月 29 05:12:10 localhost.localdomain kernel: thermal_sys: Registered thermal governor 'step_wise'
+ 2月 29 05:12:10 localhost.localdomain kernel: thermal_sys: Registered thermal governor 'user_space'
+ 2月 29 05:12:10 localhost.localdomain kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+ 2月 29 05:12:10 localhost.localdomain kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+ 2月 29 05:12:10 localhost.localdomain kernel: pci_bus 0000:00: resource 7 [mem 0x5f400000-0xfdffffff window]
+ 2月 29 05:12:10 localhost.localdomain kernel: NET: Registered protocol family 2
+ 2月 29 05:12:10 localhost.localdomain kernel: tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+ 2月 29 05:12:10 localhost.localdomain kernel: TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+ 2月 29 05:12:10 localhost.localdomain kernel: TCP bind hash table entries: 16384 (order: 6, 262144 bytes, linear)
+ 2月 29 05:12:10 localhost.localdomain kernel: TCP: Hash tables configured (established 16384 bind 16384)
+ 2月 29 05:12:10 localhost.localdomain kernel: UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+ 2月 29 05:12:10 localhost.localdomain kernel: UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+ 2月 29 05:12:10 localhost.localdomain kernel: NET: Registered protocol family 1
+ 2月 29 05:12:10 localhost.localdomain kernel: NET: Registered protocol family 44
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:01.0: Activating ISA DMA hang workarounds
+ 2月 29 05:12:10 localhost.localdomain kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+ 2月 29 05:12:10 localhost.localdomain kernel: PCI: CLS 0 bytes, default 64
+ 2月 29 05:12:10 localhost.localdomain kernel: Trying to unpack rootfs image as initramfs...
+ 2月 29 05:12:10 localhost.localdomain kernel: Freeing initrd memory: 61448K
+ 2月 29 05:12:10 localhost.localdomain kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x136c4fb839a, max_idle_ns: 440795207143 ns
+ 2月 29 05:12:10 localhost.localdomain kernel: platform rtc_cmos: registered platform RTC device (no PNP device found)
+ 2月 29 05:12:10 localhost.localdomain kernel: Initialise system trusted keyrings
+ 2月 29 05:12:10 localhost.localdomain kernel: Key type blacklist registered
+ 2月 29 05:12:10 localhost.localdomain kernel: workingset: timestamp_bits=40 max_order=19 bucket_order=0
+ 2月 29 05:12:10 localhost.localdomain kernel: zbud: loaded
+ 2月 29 05:12:10 localhost.localdomain kernel: Platform Keyring initialized
+ 2月 29 05:12:10 localhost.localdomain kernel: Key type asymmetric registered
+ 2月 29 05:12:10 localhost.localdomain kernel: Asymmetric key parser 'x509' registered
+ 2月 29 05:12:10 localhost.localdomain kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+ 2月 29 05:12:10 localhost.localdomain kernel: io scheduler mq-deadline registered
+ 2月 29 05:12:10 localhost.localdomain kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+ 2月 29 05:12:10 localhost.localdomain kernel: efifb: probing for efifb
+ 2月 29 05:12:10 localhost.localdomain kernel: efifb: framebuffer at 0x80000000, using 3072k, total 3072k
+ 2月 29 05:12:10 localhost.localdomain kernel: efifb: mode is 1024x768x32, linelength=4096, pages=1
+ 2月 29 05:12:10 localhost.localdomain kernel: efifb: scrolling: redraw
+ 2月 29 05:12:10 localhost.localdomain kernel: efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+ 2月 29 05:12:10 localhost.localdomain kernel: Console: switching to colour frame buffer device 128x48
+ 2月 29 05:12:10 localhost.localdomain kernel: fb0: EFI VGA frame buffer device
+ 2月 29 05:12:10 localhost.localdomain kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+ 2月 29 05:12:10 localhost.localdomain kernel: Linux agpgart interface v0.103
+ 2月 29 05:12:10 localhost.localdomain kernel: AMD-Vi: AMD IOMMUv2 driver by Joerg Roedel <jroedel@suse.de>
+ 2月 29 05:12:10 localhost.localdomain kernel: AMD-Vi: AMD IOMMUv2 functionality not available on this system
+ 2月 29 05:12:10 localhost.localdomain kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+ 2月 29 05:12:10 localhost.localdomain kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+ 2月 29 05:12:10 localhost.localdomain kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+ 2月 29 05:12:10 localhost.localdomain kernel: mousedev: PS/2 mouse device common for all mice
+ 2月 29 05:12:10 localhost.localdomain kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+ 2月 29 05:12:10 localhost.localdomain kernel: rtc_cmos rtc_cmos: registered as rtc0
+ 2月 29 05:12:10 localhost.localdomain kernel: rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+ 2月 29 05:12:10 localhost.localdomain kernel: ledtrig-cpu: registered to indicate activity on CPUs
+ 2月 29 05:12:10 localhost.localdomain kernel: x86/pm: family 0x16 cpu detected, MSR saving is needed during suspending.
+ 2月 29 05:12:10 localhost.localdomain kernel: drop_monitor: Initializing network drop monitor service
+ 2月 29 05:12:10 localhost.localdomain kernel: NET: Registered protocol family 10
+ 2月 29 05:12:10 localhost.localdomain kernel: Segment Routing with IPv6
+ 2月 29 05:12:10 localhost.localdomain kernel: mip6: Mobile IPv6
+ 2月 29 05:12:10 localhost.localdomain kernel: NET: Registered protocol family 17
+ 2月 29 05:12:10 localhost.localdomain kernel: mpls_gso: MPLS GSO support
+ 2月 29 05:12:10 localhost.localdomain kernel: IPI shorthand broadcast: enabled
+ 2月 29 05:12:10 localhost.localdomain kernel: sched_clock: Marking stable (4387808483, 2227158)->(4395893290, -5857649)
+ 2月 29 05:12:10 localhost.localdomain kernel: registered taskstats version 1
+ 2月 29 05:12:10 localhost.localdomain kernel: Loading compiled-in X.509 certificates
+ 2月 29 05:12:10 localhost.localdomain kernel: Loaded X.509 cert 'Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+ 2月 29 05:12:10 localhost.localdomain kernel: Loaded X.509 cert 'Debian Secure Boot Signer: 00a7468def'
+ 2月 29 05:12:10 localhost.localdomain kernel: zswap: loaded using pool lzo/zbud
+ 2月 29 05:12:10 localhost.localdomain kernel: Key type ._fscrypt registered
+ 2月 29 05:12:10 localhost.localdomain kernel: Key type .fscrypt registered
+ 2月 29 05:12:10 localhost.localdomain kernel: AppArmor: AppArmor sha1 policy hashing enabled
+ 2月 29 05:12:10 localhost.localdomain kernel: rtc_cmos rtc_cmos: setting system clock to 2020-02-28T20:11:47 UTC (1582920707)
+ 2月 29 05:12:10 localhost.localdomain kernel: Freeing unused kernel image memory: 1672K
+ 2月 29 05:12:10 localhost.localdomain kernel: Write protecting the kernel read-only data: 16384k
+ 2月 29 05:12:10 localhost.localdomain kernel: Freeing unused kernel image memory: 2036K
+ 2月 29 05:12:10 localhost.localdomain kernel: Freeing unused kernel image memory: 360K
+ 2月 29 05:12:10 localhost.localdomain kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+ 2月 29 05:12:10 localhost.localdomain kernel: Run /init as init process
+ 2月 29 05:12:10 localhost.localdomain kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+ 2月 29 05:12:10 localhost.localdomain kernel: piix4_smbus 0000:00:07.0: SMBus Host Controller at 0x4100, revision 0
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Power Button [PWRF]
+ 2月 29 05:12:10 localhost.localdomain kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input3
+ 2月 29 05:12:10 localhost.localdomain kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input4
+ 2月 29 05:12:10 localhost.localdomain kernel: e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+ 2月 29 05:12:10 localhost.localdomain kernel: e1000: Copyright (c) 1999-2006 Intel Corporation.
+ 2月 29 05:12:10 localhost.localdomain kernel: SCSI subsystem initialized
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: Sleep Button [SLPF]
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: bus type USB registered
+ 2月 29 05:12:10 localhost.localdomain kernel: usbcore: registered new interface driver usbfs
+ 2月 29 05:12:10 localhost.localdomain kernel: libata version 3.00 loaded.
+ 2月 29 05:12:10 localhost.localdomain kernel: ata_piix 0000:00:01.1: version 2.13
+ 2月 29 05:12:10 localhost.localdomain kernel: usbcore: registered new interface driver hub
+ 2月 29 05:12:10 localhost.localdomain kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input5
+ 2月 29 05:12:10 localhost.localdomain kernel: scsi host0: ata_piix
+ 2月 29 05:12:10 localhost.localdomain kernel: ahci 0000:00:0d.0: version 3.0
+ 2月 29 05:12:10 localhost.localdomain kernel: ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+ 2月 29 05:12:10 localhost.localdomain kernel: ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+ 2月 29 05:12:10 localhost.localdomain kernel: ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+ 2月 29 05:12:10 localhost.localdomain kernel: usbcore: registered new device driver usb
+ 2月 29 05:12:10 localhost.localdomain kernel: scsi host1: ata_piix
+ 2月 29 05:12:10 localhost.localdomain kernel: ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xc170 irq 14
+ 2月 29 05:12:10 localhost.localdomain kernel: ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xc178 irq 15
+ 2月 29 05:12:10 localhost.localdomain kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ 2月 29 05:12:10 localhost.localdomain kernel: scsi host2: ahci
+ 2月 29 05:12:10 localhost.localdomain kernel: ata3: SATA max UDMA/133 abar m8192@0x81424000 port 0x81424100 irq 21
+ 2月 29 05:12:10 localhost.localdomain kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+ 2月 29 05:12:10 localhost.localdomain kernel: [drm] VRAM 01000000
+ 2月 29 05:12:10 localhost.localdomain kernel: ata1.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+ 2月 29 05:12:10 localhost.localdomain kernel: scsi 0:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+ 2月 29 05:12:10 localhost.localdomain kernel: ehci-pci: EHCI PCI platform driver
+ 2月 29 05:12:10 localhost.localdomain kernel: [TTM] Zone  kernel: Available graphics memory: 755454 KiB
+ 2月 29 05:12:10 localhost.localdomain kernel: [TTM] Initializing pool allocator
+ 2月 29 05:12:10 localhost.localdomain kernel: ohci-pci: OHCI PCI platform driver
+ 2月 29 05:12:10 localhost.localdomain kernel: ohci-pci 0000:00:06.0: OHCI PCI host controller
+ 2月 29 05:12:10 localhost.localdomain kernel: ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+ 2月 29 05:12:10 localhost.localdomain kernel: ohci-pci 0000:00:06.0: irq 22, io mem 0x81426000
+ 2月 29 05:12:10 localhost.localdomain kernel: [TTM] Initializing DMA pool allocator
+ 2月 29 05:12:10 localhost.localdomain kernel: [drm] VirtualBox host is too old, no cursor support
+ 2月 29 05:12:10 localhost.localdomain kernel: checking generic (80000000 300000) vs hw (80000000 1000000)
+ 2月 29 05:12:10 localhost.localdomain kernel: fb0: switching to vboxvideodrmfb from EFI VGA
+ 2月 29 05:12:10 localhost.localdomain kernel: Console: switching to colour dummy device 80x25
+ 2月 29 05:12:10 localhost.localdomain kernel: fbcon: vboxvideodrmfb (fb0) is primary device
+ 2月 29 05:12:10 localhost.localdomain kernel: Console: switching to colour frame buffer device 128x42
+ 2月 29 05:12:10 localhost.localdomain kernel: vboxvideo 0000:00:02.0: fb0: vboxvideodrmfb frame buffer device
+ 2月 29 05:12:10 localhost.localdomain kernel: [drm] Initialized vboxvideo 1.0.0 20130823 for 0000:00:02.0 on minor 0
+ 2月 29 05:12:10 localhost.localdomain kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.04
+ 2月 29 05:12:10 localhost.localdomain kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+ 2月 29 05:12:10 localhost.localdomain kernel: usb usb1: Product: OHCI PCI host controller
+ 2月 29 05:12:10 localhost.localdomain kernel: usb usb1: Manufacturer: Linux 5.4.0-4-amd64 ohci_hcd
+ 2月 29 05:12:10 localhost.localdomain kernel: usb usb1: SerialNumber: 0000:00:06.0
+ 2月 29 05:12:10 localhost.localdomain kernel: hub 1-0:1.0: USB hub found
+ 2月 29 05:12:10 localhost.localdomain kernel: hub 1-0:1.0: 12 ports detected
+ 2月 29 05:12:10 localhost.localdomain kernel: ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+ 2月 29 05:12:10 localhost.localdomain kernel: ata3.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+ 2月 29 05:12:10 localhost.localdomain kernel: ata3.00: 4194304 sectors, multi 128: LBA48 NCQ (depth 32)
+ 2月 29 05:12:10 localhost.localdomain kernel: ata3.00: configured for UDMA/133
+ 2月 29 05:12:10 localhost.localdomain kernel: scsi 2:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+ 2月 29 05:12:10 localhost.localdomain kernel: sd 2:0:0:0: [sda] 4194304 512-byte logical blocks: (2.15 GB/2.00 GiB)
+ 2月 29 05:12:10 localhost.localdomain kernel: sd 2:0:0:0: [sda] Write Protect is off
+ 2月 29 05:12:10 localhost.localdomain kernel: sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+ 2月 29 05:12:10 localhost.localdomain kernel: sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+ 2月 29 05:12:10 localhost.localdomain kernel: sr 0:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+ 2月 29 05:12:10 localhost.localdomain kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+ 2月 29 05:12:10 localhost.localdomain kernel: sr 0:0:0:0: Attached scsi CD-ROM sr0
+ 2月 29 05:12:10 localhost.localdomain kernel: sd 2:0:0:0: [sda] Attached SCSI disk
+ 2月 29 05:12:10 localhost.localdomain kernel: usb 1-1: new full-speed USB device number 2 using ohci-pci
+ 2月 29 05:12:10 localhost.localdomain kernel: e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:3b:d8:62
+ 2月 29 05:12:10 localhost.localdomain kernel: e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+ 2月 29 05:12:10 localhost.localdomain kernel: e1000 0000:00:03.0 enp0s3: renamed from eth0
+ 2月 29 05:12:10 localhost.localdomain kernel: usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+ 2月 29 05:12:10 localhost.localdomain kernel: usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+ 2月 29 05:12:10 localhost.localdomain kernel: usb 1-1: Product: USB Tablet
+ 2月 29 05:12:10 localhost.localdomain kernel: usb 1-1: Manufacturer: VirtualBox
+ 2月 29 05:12:10 localhost.localdomain kernel: hidraw: raw HID events driver (C) Jiri Kosina
+ 2月 29 05:12:10 localhost.localdomain kernel: usbcore: registered new interface driver usbhid
+ 2月 29 05:12:10 localhost.localdomain kernel: usbhid: USB HID core driver
+ 2月 29 05:12:10 localhost.localdomain kernel: input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0001/input/input6
+ 2月 29 05:12:10 localhost.localdomain kernel: hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+ 2月 29 05:12:10 localhost.localdomain kernel: ISO 9660 Extensions: Microsoft Joliet Level 3
+ 2月 29 05:12:10 localhost.localdomain kernel: ISO 9660 Extensions: RRIP_1991A
+ 2月 29 05:12:10 localhost.localdomain kernel: loop: module loaded
+ 2月 29 05:12:10 localhost.localdomain kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+ 2月 29 05:12:10 localhost.localdomain kernel: uhci_hcd: USB Universal Host Controller Interface driver
+ 2月 29 05:12:10 localhost.localdomain kernel: usbcore: registered new interface driver usb-storage
+ 2月 29 05:12:10 localhost.localdomain kernel: EXT4-fs (sda): mounted filesystem with ordered data mode. Opts: (null)
+ 2月 29 05:12:10 localhost.localdomain kernel: Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Inserted module 'autofs4'
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: systemd 244.3-1 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Detected virtualization oracle.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Detected architecture x86-64.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Set hostname to <localhost.localdomain>.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Initializing machine ID from random generator.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: /lib/systemd/system/dbus.socket:5: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: run-live-persistence-sr0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: usr-lib-live-mount-persistence-sr0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Created slice system-getty.slice.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Created slice User and Session Slice.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Reached target Remote File Systems.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Reached target Slices.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Reached target Swap.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Listening on Syslog Socket.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Listening on initctl Compatibility Named Pipe.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Listening on Journal Audit Socket.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Listening on Journal Socket (/dev/log).
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Listening on udev Control Socket.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Listening on udev Kernel Socket.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Unmounting /run/live/persistence/sr0...
+ 2月 29 05:12:10 localhost.localdomain systemd[515]: run-live-persistence-sr0.mount: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Unmounting /usr/lib/live/mount/persistence/sr0...
+ 2月 29 05:12:10 localhost.localdomain systemd[516]: usr-lib-live-mount-persistence-sr0.mount: Failed to connect stdout to the journal socket, ignoring: No such file or directory
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: run-live-persistence-sr0.mount: Mount process exited, code=exited, status=32/n/a
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Failed unmounting /run/live/persistence/sr0.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: usr-lib-live-mount-persistence-sr0.mount: Succeeded.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Unmounted /usr/lib/live/mount/persistence/sr0.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Listening on Journal Socket.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Mounting Huge Pages File System...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Mounting POSIX Message Queue File System...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Mounting Kernel Debug File System...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Create list of static device nodes for the current kernel...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Journal Service...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Load Kernel Modules...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Remount Root and Kernel File Systems...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting udev Coldplug all Devices...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Mounted Huge Pages File System.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Mounted POSIX Message Queue File System.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Mounted Kernel Debug File System.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Create list of static device nodes for the current kernel.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Load Kernel Modules.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Kernel Configuration File System being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Apply Kernel Variables...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Remount Root and Kernel File Systems.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Load/Save Random Seed...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Create System Users...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Apply Kernel Variables.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Load/Save Random Seed.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Create System Users.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Create Static Device Nodes in /dev...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Create Static Device Nodes in /dev.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Reached target Local File Systems (Pre).
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Mounting /tmp...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting udev Kernel Device Manager...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started udev Coldplug all Devices.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Mounted /tmp.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Reached target Local File Systems.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Load AppArmor profiles being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Helper to synchronize boot up for ifupdown...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Helper to synchronize boot up for ifupdown.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Raise network interfaces...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Received SIGRTMIN+20 from PID 151 (plymouthd).
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: plymouth-read-write.service: Succeeded.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Raise network interfaces.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started udev Kernel Device Manager.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Show Plymouth Boot Screen...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: plymouth-start.service: Succeeded.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Show Plymouth Boot Screen.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Dispatch Password Requests to Console Directory Watch being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Forward Password Requests to Plymouth Directory Watch.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Reached target Local Encrypted Volumes.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Reached target Paths.
+ 2月 29 05:12:10 localhost.localdomain kernel: vboxguest: host-version: 5.2.34r133883 0x1
+ 2月 29 05:12:10 localhost.localdomain kernel: vbg_heartbeat_init: Setting up heartbeat to trigger every 2000 milliseconds
+ 2月 29 05:12:10 localhost.localdomain kernel: input: VirtualBox mouse integration as /devices/pci0000:00/0000:00:04.0/input/input7
+ 2月 29 05:12:10 localhost.localdomain kernel: vboxguest: misc device minor 61, IRQ 20, I/O port c140, MMIO at 0x0000000081000000 (size 0x0000000000400000)
+ 2月 29 05:12:10 localhost.localdomain kernel: ACPI: AC Adapter [AC] (on-line)
+ 2月 29 05:12:10 localhost.localdomain kernel: sr 0:0:0:0: Attached scsi generic sg0 type 5
+ 2月 29 05:12:10 localhost.localdomain kernel: sd 2:0:0:0: Attached scsi generic sg1 type 0
+ 2月 29 05:12:10 localhost.localdomain kernel: EFI Variables Facility v0.08 2004-May-17
+ 2月 29 05:12:10 localhost.localdomain kernel: input: PC Speaker as /devices/platform/pcspkr/input/input8
+ 2月 29 05:12:10 localhost.localdomain kernel: pstore: Using crash dump compression: deflate
+ 2月 29 05:12:10 localhost.localdomain kernel: pstore: Registered efi as persistent store backend
+ 2月 29 05:12:10 localhost.localdomain kernel: cryptd: max_cpu_qlen set to 1000
+ 2月 29 05:12:10 localhost.localdomain kernel: AVX version of gcm_enc/dec engaged.
+ 2月 29 05:12:10 localhost.localdomain kernel: AES CTR mode by8 optimization enabled
+ 2月 29 05:12:10 localhost.localdomain kernel: MCE: In-kernel MCE decoding enabled.
+ 2月 29 05:12:10 localhost.localdomain kernel: snd_intel8x0 0000:00:05.0: white list rate for 1028:0177 is 48000
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Kernel Configuration File System being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Load AppArmor profiles being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Show Plymouth Boot Screen...
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: plymouth-read-write.service: Succeeded.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Received SIGRTMIN+20 from PID 151 (plymouthd).
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: plymouth-start.service: Succeeded.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Show Plymouth Boot Screen.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Condition check resulted in Dispatch Password Requests to Console Directory Watch being skipped.
+ 2月 29 05:12:10 localhost.localdomain systemd-journald[521]: Journal started
+ 2月 29 05:12:10 localhost.localdomain systemd-journald[521]: Runtime Journal (/run/log/journal/d84a452c0d314ebf867172b0265f8328) is 1.8M, max 14.7M, 12.9M free.
+ 2月 29 05:12:10 localhost.localdomain mtp-probe[585]: checking bus 1, device 2: "/sys/devices/pci0000:00/0000:00:06.0/usb1/1-1"
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Started Journal Service.
+ 2月 29 05:12:10 localhost.localdomain systemd-sysusers[528]: Creating group systemd-coredump with gid 999.
+ 2月 29 05:12:10 localhost.localdomain mtp-probe[585]: bus: 1, device: 2 was not an MTP device
+ 2月 29 05:12:10 localhost.localdomain systemd-sysusers[528]: Creating user systemd-coredump (systemd Core Dumper) with uid 999 and gid 999.
+ 2月 29 05:12:10 localhost.localdomain systemd-udevd[567]: Using default interface naming scheme 'v243'.
+ 2月 29 05:12:10 localhost.localdomain systemd-udevd[567]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+ 2月 29 05:12:10 localhost.localdomain systemd-udevd[564]: ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.
+ 2月 29 05:12:10 localhost.localdomain systemd[1]: Starting Flush Journal to Persistent Storage...
+ 2月 29 05:12:10 localhost.localdomain systemd-journald[521]: Time spent on flushing to /var is 36.149ms for 547 entries.
+ 2月 29 05:12:10 localhost.localdomain systemd-journald[521]: System Journal (/var/log/journal/d84a452c0d314ebf867172b0265f8328) is 8.0M, max 195.1M, 187.1M free.
+ 2月 29 05:12:11 localhost.localdomain systemd[1]: Started Flush Journal to Persistent Storage.
+ 2月 29 05:12:11 localhost.localdomain systemd[1]: Starting Create Volatile Files and Directories...
+ 2月 29 05:12:11 localhost.localdomain systemd[1]: Started Create Volatile Files and Directories.
+ 2月 29 05:12:11 localhost.localdomain systemd[1]: Starting live-config contains the components that configure a live system during the boot process (late userspace)....
+ 2月 29 05:12:11 localhost.localdomain systemd[1]: Starting Network Time Synchronization...
+ 2月 29 05:12:11 localhost.localdomain systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+ 2月 29 05:12:11 localhost.localdomain systemd[1]: Started Update UTMP about System Boot/Shutdown.
+ 2月 29 05:12:11 localhost.localdomain systemd-udevd[567]: controlC0: Process '/usr/sbin/alsactl -E HOME=/run/alsa -E XDG_RUNTIME_DIR=/run/alsa/runtime restore 0' failed with exit code 99.
+ 2月 29 05:12:12 localhost.localdomain live-config[696]: live-config: debconf hostnameDevice "eth0" does not exist.
+ 2月 29 05:12:12 localhost.localdomain live-config[696]: Device "eth0" does not exist.
+ 2月 29 05:12:12 localhost.localdomain live-config[696]: Device "eth0" does not exist.
+ 2月 29 05:12:15 debian systemd[1]: Started Network Time Synchronization.
+ 2月 29 05:12:15 debian systemd[1]: Reached target System Initialization.
+ 2月 29 05:12:15 debian systemd[1]: Started Daily Cleanup of Temporary Directories.
+ 2月 29 05:12:15 debian systemd[1]: Reached target System Time Set.
+ 2月 29 05:12:15 debian systemd[1]: Reached target System Time Synchronized.
+ 2月 29 05:12:15 debian systemd[1]: Started Trigger anacron every hour.
+ 2月 29 05:12:15 debian systemd[1]: Started Daily apt download activities.
+ 2月 29 05:12:15 debian systemd[1]: Started Daily apt upgrade and clean activities.
+ 2月 29 05:12:15 debian systemd[1]: Started Periodic ext4 Online Metadata Check for All Filesystems.
+ 2月 29 05:12:15 debian systemd[1]: Started Daily exim4-base housekeeping.
+ 2月 29 05:12:15 debian systemd[1]: Started Daily rotation of log files.
+ 2月 29 05:12:15 debian systemd[1]: Started Daily man-db regeneration.
+ 2月 29 05:12:15 debian systemd[1]: Reached target Timers.
+ 2月 29 05:12:15 debian systemd[1]: Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+ 2月 29 05:12:15 debian systemd[1]: Listening on D-Bus System Message Bus Socket.
+ 2月 29 05:12:15 debian systemd[1]: Listening on UUID daemon activation socket.
+ 2月 29 05:12:15 debian systemd[1]: Reached target Sockets.
+ 2月 29 05:12:18 debian usermod[773]: change user 'root' password
+ 2月 29 05:12:18 debian groupadd[784]: group added to /etc/group: name=user, GID=1000
+ 2月 29 05:12:18 debian groupadd[784]: group added to /etc/gshadow: name=user
+ 2月 29 05:12:18 debian groupadd[784]: new group: name=user, GID=1000
+ 2月 29 05:12:18 debian useradd[790]: new user: name=user, UID=1000, GID=1000, home=/home/user, shell=/bin/bash, from=none
+ 2月 29 05:12:18 debian usermod[800]: change user 'user' password
+ 2月 29 05:12:18 debian chfn[807]: changed user 'user' information
+ 2月 29 05:12:19 debian usermod[815]: change user 'user' password
+ 2月 29 05:12:19 debian gpasswd[823]: user user added by root to group audio
+ 2月 29 05:12:19 debian gpasswd[830]: user user added by root to group cdrom
+ 2月 29 05:12:19 debian gpasswd[837]: user user added by root to group dip
+ 2月 29 05:12:20 debian gpasswd[844]: user user added by root to group floppy
+ 2月 29 05:12:20 debian gpasswd[851]: user user added by root to group video
+ 2月 29 05:12:20 debian gpasswd[858]: user user added by root to group plugdev
+ 2月 29 05:12:20 debian gpasswd[865]: user user added by root to group netdev
+ 2月 29 05:12:21 debian gpasswd[873]: user user added by root to group scanner
+ 2月 29 05:12:21 debian sudo[885]:     root : TTY=unknown ; PWD=/ ; USER=user ; COMMAND=/usr/bin/sh -c echo 'SU_TO_ROOT_SU=sudo' >> /home/user/.su-to-rootrc
+ 2月 29 05:12:21 debian sudo[885]: pam_unix(sudo:session): session opened for user user by (uid=0)
+ 2月 29 05:12:21 debian sudo[885]: pam_unix(sudo:session): session closed for user user
+ 2月 29 05:12:21 debian sudo[887]:     root : TTY=unknown ; PWD=/ ; USER=user ; COMMAND=/usr/bin/sh -c umask 0077 && mkdir -p /home/user/.kde/share/config && cat > /home/user/.kde/share/config/kdesurc
+ 2月 29 05:12:21 debian sudo[887]: pam_unix(sudo:session): session opened for user user by (uid=0)
+ 2月 29 05:12:21 debian sudo[887]: pam_unix(sudo:session): session closed for user user
+ 2月 29 05:12:28 debian live-config[696]:  user-setup sudo locales tzdata
+ 2月 29 05:12:28 debian live-config[696]: Current default time zone: 'Asia/Tokyo'
+ 2月 29 05:12:28 debian live-config[696]: Local time is now:      Sat Feb 29 05:12:28 JST 2020.
+ 2月 29 05:12:28 debian live-config[696]: Universal Time is now:  Fri Feb 28 20:12:28 UTC 2020.
+ 2月 29 05:12:29 debian live-config[696]:  lightdm keyboard-configuration/lib/live/config/0150-keyboard-configuration: 86: setupcon: not found
+ 2月 29 05:12:32 debian live-config[696]:  policykit anacron util-linux login xserver-xorg xfce4-panel.
+ 2月 29 05:12:32 debian systemd[1]: Started live-config contains the components that configure a live system during the boot process (late userspace)..
+ 2月 29 05:12:32 debian systemd[1]: Reached target Basic System.
+ 2月 29 05:12:32 debian systemd[1]: Starting Modem Manager...
+ 2月 29 05:12:32 debian systemd[1]: Condition check resulted in Manage Sound Card State (restore and store) being skipped.
+ 2月 29 05:12:32 debian systemd[1]: Starting Save/Restore Sound Card State...
+ 2月 29 05:12:32 debian alsactl[1025]: /usr/sbin/alsactl: load_state:1683: Cannot open /var/lib/alsa/asound.state for reading: No such file or directory
+ 2月 29 05:12:32 debian systemd[1]: Started Run anacron jobs.
+ 2月 29 05:12:32 debian alsactl[1025]: Found hardware: "ICH" "Analog Devices AD1980" "AC97a:41445370" "0x1028" "0x0177"
+ 2月 29 05:12:32 debian systemd[1]: Starting Deferred execution scheduler...
+ 2月 29 05:12:32 debian alsactl[1025]: Hardware is initialized using a generic method
+ 2月 29 05:12:32 debian systemd[1]: Starting Avahi mDNS/DNS-SD Stack...
+ 2月 29 05:12:32 debian systemd[1]: Started Regular background program processing daemon.
+ 2月 29 05:12:32 debian systemd[1]: Started D-Bus System Message Bus.
+ 2月 29 05:12:32 debian cron[1029]: (CRON) INFO (pidfile fd = 3)
+ 2月 29 05:12:32 debian systemd[1]: Starting Network Manager...
+ 2月 29 05:12:32 debian systemd[1]: Starting Remove Stale Online ext4 Metadata Check Snapshots...
+ 2月 29 05:12:32 debian systemd[1]: Condition check resulted in getty on tty2-tty6 if dbus and logind are not available being skipped.
+ 2月 29 05:12:32 debian systemd[1]: Starting live-tools - System Support Scripts...
+ 2月 29 05:12:32 debian cron[1029]: (CRON) INFO (Running @reboot jobs)
+ 2月 29 05:12:32 debian systemd[1]: Starting Initialize hardware monitoring sensors...
+ 2月 29 05:12:32 debian systemd[1]: Starting Restore /etc/resolv.conf if the system crashed before the ppp link was shut down...
+ 2月 29 05:12:33 debian systemd[1]: Starting System Logging Service...
+ 2月 29 05:12:33 debian systemd[1]: Starting Login Service...
+ 2月 29 05:12:33 debian systemd[1]: Starting Disk Manager...
+ 2月 29 05:12:33 debian systemd[1]: Starting WPA supplicant...
+ 2月 29 05:12:33 debian sensors[1034]: No sensors found!
+ 2月 29 05:12:33 debian sensors[1034]: Make sure you loaded all the kernel drivers you need.
+ 2月 29 05:12:33 debian sensors[1034]: Try sensors-detect to find out which these are.
+ 2月 29 05:12:33 debian systemd[1]: Started Save/Restore Sound Card State.
+ 2月 29 05:12:33 debian systemd[1]: anacron.service: Succeeded.
+ 2月 29 05:12:33 debian systemd[1]: Started Deferred execution scheduler.
+ 2月 29 05:12:33 debian systemd[1]: live-tools.service: Succeeded.
+ 2月 29 05:12:33 debian avahi-daemon[1028]: Found user 'avahi' (UID 112) and group 'avahi' (GID 117).
+ 2月 29 05:12:33 debian avahi-daemon[1028]: Successfully dropped root privileges.
+ 2月 29 05:12:33 debian avahi-daemon[1028]: avahi-daemon 0.7 starting up.
+ 2月 29 05:12:33 debian systemd[1]: Started live-tools - System Support Scripts.
+ 2月 29 05:12:33 debian systemd[1]: pppd-dns.service: Succeeded.
+ 2月 29 05:12:33 debian systemd[1]: Started Restore /etc/resolv.conf if the system crashed before the ppp link was shut down.
+ 2月 29 05:12:33 debian systemd[1]: Reached target Sound Card.
+ 2月 29 05:12:33 debian sensors[1046]: No sensors found!
+ 2月 29 05:12:33 debian sensors[1046]: Make sure you loaded all the kernel drivers you need.
+ 2月 29 05:12:33 debian sensors[1046]: Try sensors-detect to find out which these are.
+ 2月 29 05:12:34 debian rsyslogd[1036]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2001.0]
+ 2月 29 05:12:34 debian rsyslogd[1036]: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="1036" x-info="https://www.rsyslog.com"] start
+ 2月 29 05:12:34 debian systemd[1]: Started System Logging Service.
+ 2月 29 05:12:34 debian systemd[1]: Started Initialize hardware monitoring sensors.
+ 2月 29 05:12:34 debian udisksd[1039]: udisks daemon version 2.8.4 starting
+ 2月 29 05:12:34 debian avahi-daemon[1028]: Successfully called chroot().
+ 2月 29 05:12:34 debian avahi-daemon[1028]: Successfully dropped remaining capabilities.
+ 2月 29 05:12:34 debian systemd[1]: Started Avahi mDNS/DNS-SD Stack.
+ 2月 29 05:12:34 debian avahi-daemon[1028]: No service file found in /etc/avahi/services.
+ 2月 29 05:12:34 debian avahi-daemon[1028]: Network interface enumeration completed.
+ 2月 29 05:12:34 debian avahi-daemon[1028]: Server startup complete. Host name is debian.local. Local service cookie is 1052253588.
+ 2月 29 05:12:35 debian ModemManager[1024]: <info>  ModemManager (version 1.10.4) starting in system bus...
+ 2月 29 05:12:35 debian systemd[1]: Started WPA supplicant.
+ 2月 29 05:12:35 debian wpa_supplicant[1040]: Successfully initialized wpa_supplicant
+ 2月 29 05:12:35 debian dbus-daemon[1030]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.4' (uid=0 pid=1024 comm="/usr/sbin/ModemManager --filter-policy=strict ")
+ 2月 29 05:12:35 debian systemd[1]: Starting Authorization Manager...
+ 2月 29 05:12:36 debian udisksd[1039]: failed to load module mdraid: libbd_mdraid.so.2: cannot open shared object file: No such file or directory
+ 2月 29 05:12:36 debian polkitd[1056]: started daemon version 0.105 using authority implementation `local' version `0.105'
+ 2月 29 05:12:36 debian dbus-daemon[1030]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+ 2月 29 05:12:36 debian systemd[1]: Started Authorization Manager.
+ 2月 29 05:12:36 debian udisksd[1039]: Failed to load the 'mdraid' libblockdev plugin
+ 2月 29 05:12:37 debian systemd[1]: Started Modem Manager.
+ 2月 29 05:12:37 debian systemd[1]: Started Disk Manager.
+ 2月 29 05:12:37 debian udisksd[1039]: Acquired the name org.freedesktop.UDisks2 on the system message bus
+ 2月 29 05:12:38 debian NetworkManager[1031]: <info>  [1582920758.3603] NetworkManager (version 1.22.6) is starting... (for the first time)
+ 2月 29 05:12:38 debian NetworkManager[1031]: <info>  [1582920758.3627] Read config: /etc/NetworkManager/NetworkManager.conf (lib: no-mac-addr-change.conf)
+ 2月 29 05:12:38 debian NetworkManager[1031]: <warn>  [1582920758.3635] config: unknown key 'wifi.cloned-mac-address' in section [device-mac-addr-change-wifi] of file '/usr/lib/NetworkManager/conf.d/no-mac-addr-change.conf'
+ 2月 29 05:12:38 debian NetworkManager[1031]: <warn>  [1582920758.3636] config: unknown key 'ethernet.cloned-mac-address' in section [device-mac-addr-change-wifi] of file '/usr/lib/NetworkManager/conf.d/no-mac-addr-change.conf'
+ 2月 29 05:12:38 debian systemd[1]: Started Network Manager.
+ 2月 29 05:12:38 debian systemd[1]: Reached target Network.
+ 2月 29 05:12:38 debian NetworkManager[1031]: <info>  [1582920758.3964] bus-manager: acquired D-Bus service "org.freedesktop.NetworkManager"
+ 2月 29 05:12:38 debian systemd[1]: Starting Network Manager Wait Online...
+ 2月 29 05:12:38 debian systemd[1]: Condition check resulted in fast remote file copy program daemon being skipped.
+ 2月 29 05:12:38 debian systemd[1]: Starting Permit User Sessions...
+ 2月 29 05:12:38 debian NetworkManager[1031]: <info>  [1582920758.5812] manager[0x564839b70020]: monitoring kernel firmware directory '/lib/firmware'.
+ 2月 29 05:12:38 debian NetworkManager[1031]: <info>  [1582920758.5833] monitoring ifupdown state file '/run/network/ifstate'.
+ 2月 29 05:12:38 debian systemd[1]: Started Permit User Sessions.
+ 2月 29 05:12:38 debian systemd[1]: Starting Light Display Manager...
+ 2月 29 05:12:38 debian dbus-daemon[1030]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.7' (uid=0 pid=1031 comm="/usr/sbin/NetworkManager --no-daemon ")
+ 2月 29 05:12:38 debian systemd[1]: Starting Hold until boot process finishes up...
+ 2月 29 05:12:38 debian systemd[1]: Starting Hostname Service...
+ 2月 29 05:12:39 debian dbus-daemon[1030]: [system] Activating via systemd: service name='org.freedesktop.login1' unit='dbus-org.freedesktop.login1.service' requested by ':1.8' (uid=0 pid=1073 comm="/usr/sbin/lightdm ")
+ 2月 29 05:12:39 debian ModemManager[1024]: <info>  Couldn't check support for device '/sys/devices/pci0000:00/0000:00:03.0': not supported by any plugin
+ 2月 29 05:12:41 debian systemd-logind[1067]: New seat seat0.
+ 2月 29 05:12:42 debian systemd-logind[1067]: Watching system buttons on /dev/input/event1 (Power Button)
+ 2月 29 05:12:42 debian systemd-logind[1067]: Watching system buttons on /dev/input/event3 (Sleep Button)
+ 2月 29 05:12:42 debian systemd-logind[1067]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+ 2月 29 05:12:42 debian dbus-daemon[1030]: [system] Successfully activated service 'org.freedesktop.login1'
+ 2月 29 05:12:42 debian systemd[1]: Started Login Service.
+ 2月 29 05:12:42 debian lightdm[1073]: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+ 2月 29 05:12:42 debian systemd[1]: Received SIGRTMIN+21 from PID 151 (plymouthd).
+ 2月 29 05:12:42 debian systemd[1]: Received SIGRTMIN+21 from PID 151 (plymouthd).
+ 2月 29 05:12:42 debian systemd[1]: plymouth-quit-wait.service: Succeeded.
+ 2月 29 05:12:42 debian systemd[1]: Started Hold until boot process finishes up.
+ 2月 29 05:12:42 debian lightdm[1073]: Could not enumerate user data directory /var/lib/lightdm/data: Error opening directory '/var/lib/lightdm/data': No such file or directory
+ 2月 29 05:12:42 debian systemd[1]: Started Getty on tty1.
+ 2月 29 05:12:42 debian systemd[1]: Reached target Login Prompts.
+ 2月 29 05:12:42 debian systemd[1]: Started Light Display Manager.
+ 2月 29 05:12:42 debian dbus-daemon[1030]: [system] Successfully activated service 'org.freedesktop.hostname1'
+ 2月 29 05:12:42 debian systemd[1]: Started Hostname Service.
+ 2月 29 05:12:42 debian NetworkManager[1031]: <info>  [1582920762.4708] hostname: hostname: using hostnamed
+ 2月 29 05:12:42 debian NetworkManager[1031]: <info>  [1582920762.4710] hostname: hostname changed from (none) to "debian"
+ 2月 29 05:12:42 debian NetworkManager[1031]: <info>  [1582920762.4810] dns-mgr[0x564839b55240]: init: dns=default,systemd-resolved rc-manager=resolvconf
+ 2月 29 05:12:42 debian NetworkManager[1031]: <info>  [1582920762.5653] manager[0x564839b70020]: rfkill: Wi-Fi hardware radio set enabled
+ 2月 29 05:12:42 debian NetworkManager[1031]: <info>  [1582920762.5655] manager[0x564839b70020]: rfkill: WWAN hardware radio set enabled
+ 2月 29 05:12:42 debian systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+ 2月 29 05:12:42 debian NetworkManager[1031]: <info>  [1582920762.7400] Loaded device plugin: NMAtmManager (/usr/lib/x86_64-linux-gnu/NetworkManager/1.22.6/libnm-device-plugin-adsl.so)
+ 2月 29 05:12:42 debian NetworkManager[1031]: <info>  [1582920762.8835] Loaded device plugin: NMBluezManager (/usr/lib/x86_64-linux-gnu/NetworkManager/1.22.6/libnm-device-plugin-bluetooth.so)
+ 2月 29 05:12:42 debian NetworkManager[1031]: <info>  [1582920762.9661] Loaded device plugin: NMTeamFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/1.22.6/libnm-device-plugin-team.so)
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.0406] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/1.22.6/libnm-device-plugin-wifi.so)
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.0427] Loaded device plugin: NMWwanFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/1.22.6/libnm-device-plugin-wwan.so)
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.0544] manager: rfkill: Wi-Fi enabled by radio killswitch; enabled by state file
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.0576] manager: rfkill: WWAN enabled by radio killswitch; enabled by state file
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.0625] manager: Networking is enabled by state file
+ 2月 29 05:12:43 debian dbus-daemon[1030]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.7' (uid=0 pid=1031 comm="/usr/sbin/NetworkManager --no-daemon ")
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.0737] dhcp-init: Using DHCP client 'internal'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.1010] settings: Loaded settings plugin: ifupdown ("/usr/lib/x86_64-linux-gnu/NetworkManager/1.22.6/libnm-settings-plugin-ifupdown.so")
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.1020] settings: Loaded settings plugin: keyfile (internal)
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.1034] ifupdown: management mode: unmanaged
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.1057] ifupdown:       interface-parser: parsing file /etc/network/interfaces
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.1067] ifupdown:       interface-parser: finished parsing file /etc/network/interfaces
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.1252] device (lo): carrier: link connected
+ 2月 29 05:12:43 debian systemd[1]: Starting Network Manager Script Dispatcher Service...
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.1353] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.1804] manager: (enp0s3): new Ethernet device (/org/freedesktop/NetworkManager/Devices/2)
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.2499] settings: (enp0s3): created default wired connection '有線接続 1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.2796] device (enp0s3): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+ 2月 29 05:12:43 debian dbus-daemon[1030]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+ 2月 29 05:12:43 debian systemd[1]: Started Network Manager Script Dispatcher Service.
+ 2月 29 05:12:43 debian kernel: e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+ 2月 29 05:12:43 debian kernel: IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.3215] device (enp0s3): carrier: link connected
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.4346] modem-manager: ModemManager available
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.4485] device (enp0s3): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.4955] policy: auto-activating connection '有線接続 1' (6a70c44c-f1cb-37d3-8e62-207ade41b3f4)
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5057] device (enp0s3): Activation: starting connection '有線接続 1' (6a70c44c-f1cb-37d3-8e62-207ade41b3f4)
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5100] device (enp0s3): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5197] manager: NetworkManager state is now CONNECTING
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5255] device (enp0s3): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5533] device (enp0s3): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5610] dhcp4 (enp0s3): activation: beginning transaction (timeout in 45 seconds)
+ 2月 29 05:12:43 debian avahi-daemon[1028]: Joining mDNS multicast group on interface enp0s3.IPv6 with address fe80::abee:5da2:47c6:50ec.
+ 2月 29 05:12:43 debian avahi-daemon[1028]: New relevant interface enp0s3.IPv6 for mDNS.
+ 2月 29 05:12:43 debian avahi-daemon[1028]: Registering new address record for fe80::abee:5da2:47c6:50ec on enp0s3.*.
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5980] dhcp4 (enp0s3): option dhcp_lease_time      => '86400'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5981] dhcp4 (enp0s3): option domain_name          => 'kkbnj1.kt.home.ne.jp'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5981] dhcp4 (enp0s3): option domain_name_servers  => '10.0.2.3'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5981] dhcp4 (enp0s3): option expiry               => '1583007163'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5982] dhcp4 (enp0s3): option ip_address           => '10.0.2.15'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5982] dhcp4 (enp0s3): option next_server          => '10.0.2.4'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5983] dhcp4 (enp0s3): option requested_broadcast_address => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5983] dhcp4 (enp0s3): option requested_domain_name => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5983] dhcp4 (enp0s3): option requested_domain_name_servers => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5984] dhcp4 (enp0s3): option requested_domain_search => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5984] dhcp4 (enp0s3): option requested_host_name  => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5985] dhcp4 (enp0s3): option requested_interface_mtu => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5985] dhcp4 (enp0s3): option requested_ms_classless_static_routes => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5985] dhcp4 (enp0s3): option requested_nis_domain => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5985] dhcp4 (enp0s3): option requested_nis_servers => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5986] dhcp4 (enp0s3): option requested_ntp_servers => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5986] dhcp4 (enp0s3): option requested_rfc3442_classless_static_routes => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5986] dhcp4 (enp0s3): option requested_root_path  => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5987] dhcp4 (enp0s3): option requested_routers    => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5987] dhcp4 (enp0s3): option requested_static_routes => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5987] dhcp4 (enp0s3): option requested_subnet_mask => '1'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.5988] dhcp4 (enp0s3): option requested_time_offset => '1'
+ 2月 29 05:12:43 debian avahi-daemon[1028]: Joining mDNS multicast group on interface enp0s3.IPv4 with address 10.0.2.15.
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.6047] dhcp4 (enp0s3): option requested_wpad       => '1'
+ 2月 29 05:12:43 debian avahi-daemon[1028]: New relevant interface enp0s3.IPv4 for mDNS.
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.6047] dhcp4 (enp0s3): option routers              => '10.0.2.2'
+ 2月 29 05:12:43 debian avahi-daemon[1028]: Registering new address record for 10.0.2.15 on enp0s3.IPv4.
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.6048] dhcp4 (enp0s3): option subnet_mask          => '255.255.255.0'
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.6048] dhcp4 (enp0s3): state changed unknown -> bound
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.6414] device (enp0s3): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.6812] device (enp0s3): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.6874] device (enp0s3): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.6981] manager: NetworkManager state is now CONNECTED_LOCAL
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.7378] manager: NetworkManager state is now CONNECTED_SITE
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.7424] policy: set '有線接続 1' (enp0s3) as default for IPv4 routing and DNS
+ 2月 29 05:12:43 debian dbus-daemon[1030]: [system] Activating via systemd: service name='org.freedesktop.resolve1' unit='dbus-org.freedesktop.resolve1.service' requested by ':1.7' (uid=0 pid=1031 comm="/usr/sbin/NetworkManager --no-daemon ")
+ 2月 29 05:12:43 debian dbus-daemon[1030]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.resolve1.service': Unit dbus-org.freedesktop.resolve1.service not found.
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.7607] device (enp0s3): Activation: successful, device activated.
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.7787] manager: NetworkManager state is now CONNECTED_GLOBAL
+ 2月 29 05:12:43 debian NetworkManager[1031]: <info>  [1582920763.8180] manager: startup complete
+ 2月 29 05:12:43 debian systemd[1]: Started Network Manager Wait Online.
+ 2月 29 05:12:43 debian systemd[1]: Reached target Network is Online.
+ 2月 29 05:12:43 debian systemd[1]: Starting LSB: exim Mail Transport Agent...
+ 2月 29 05:12:43 debian systemd[1]: Starting LSB: disk temperature monitoring daemon...
+ 2月 29 05:12:43 debian systemd[1]: Started LSB: disk temperature monitoring daemon.
+ 2月 29 05:12:46 debian exim4[1100]: Starting MTA:
+ 2月 29 05:12:46 debian exim4[1357]: Starting MTA:
+ 2月 29 05:12:46 debian exim4[1357]: 020-02-29 05:12:46 Warning: No server certificate defined; will use a selfsigned one.
+ 2月 29 05:12:47 debian systemd-timesyncd[686]: Initial synchronization to time server 194.190.168.1:123 (2.debian.pool.ntp.org).
+ 2月 29 05:12:47 debian exim4[1357]:  Suggested action: either install a certificate or change tls_advertise_
+ 2月 29 05:12:47 debian exim4[1364]:  Suggested action: either install a certificate or change tls_advertise_
+ 2月 29 05:12:47 debian exim4[1364]: 020-02-29 05:12:47 Warning: No server certificate defined; will use a selfsigned one.
+ 2月 29 05:12:47 debian exim4[1364]:  Suggested ac
+ 2月 29 05:12:47 debian exim4[1100]:  Suggest
+ 2月 29 05:12:47 debian systemd[1]: Started LSB: exim Mail Transport Agent.
+ 2月 29 05:12:47 debian systemd[1]: Reached target Multi-User System.
+ 2月 29 05:12:48 debian login[1090]: pam_unix(login:session): session opened for user user by LOGIN(uid=0)
+ 2月 29 05:12:48 debian systemd-logind[1067]: New session 1 of user user.
+ 2月 29 05:12:48 debian systemd[1]: Created slice User Slice of UID 1000.
+ 2月 29 05:12:48 debian systemd[1]: Starting User Runtime Directory /run/user/1000...
+ 2月 29 05:12:48 debian systemd[1]: Started User Runtime Directory /run/user/1000.
+ 2月 29 05:12:48 debian systemd[1]: Starting User Manager for UID 1000...
+ 2月 29 05:12:48 debian systemd[1407]: pam_unix(systemd-user:session): session opened for user user by (uid=0)
+ 2月 29 05:12:50 debian systemd[1407]: Reached target Paths.
+ 2月 29 05:12:50 debian systemd[1407]: Reached target Timers.
+ 2月 29 05:12:50 debian systemd[1407]: Starting D-Bus User Message Bus Socket.
+ 2月 29 05:12:50 debian systemd[1407]: Listening on GnuPG network certificate management daemon.
+ 2月 29 05:12:50 debian systemd[1407]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+ 2月 29 05:12:50 debian systemd[1407]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+ 2月 29 05:12:50 debian systemd[1407]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+ 2月 29 05:12:50 debian systemd[1407]: Listening on GnuPG cryptographic agent and passphrase cache.
+ 2月 29 05:12:50 debian systemd[1407]: Listening on debconf communication socket.
+ 2月 29 05:12:50 debian systemd[1407]: Listening on Sound System.
+ 2月 29 05:12:50 debian systemd[1407]: Listening on D-Bus User Message Bus Socket.
+ 2月 29 05:12:50 debian systemd[1407]: Reached target Sockets.
+ 2月 29 05:12:50 debian systemd[1407]: Reached target Basic System.
+ 2月 29 05:12:50 debian systemd[1]: Started User Manager for UID 1000.
+ 2月 29 05:12:50 debian systemd[1]: Started Session 1 of user user.
+ 2月 29 05:12:50 debian systemd[1407]: Starting Sound Service...
+ 2月 29 05:12:51 debian sudo[1456]:     user : TTY=tty1 ; PWD=/home/user ; USER=root ; COMMAND=/usr/sbin/iptables-restore /home/user/.local/etc/iptables.rule4
+ 2月 29 05:12:51 debian sudo[1456]: pam_unix(sudo:session): session opened for user root by user(uid=0)
+ 2月 29 05:12:53 debian sudo[1456]: pam_unix(sudo:session): session closed for user root
+ 2月 29 05:12:53 debian sudo[1473]:     user : TTY=tty1 ; PWD=/home/user ; USER=root ; COMMAND=/usr/sbin/ip6tables-restore /home/user/.local/etc/iptables.rule6
+ 2月 29 05:12:53 debian sudo[1473]: pam_unix(sudo:session): session opened for user root by user(uid=0)
+ 2月 29 05:12:53 debian sudo[1473]: pam_unix(sudo:session): session closed for user root
+ 2月 29 05:12:54 debian systemd[1]: e2scrub_reap.service: Succeeded.
+ 2月 29 05:12:54 debian systemd[1]: Started Remove Stale Online ext4 Metadata Check Snapshots.
+ 2月 29 05:12:54 debian systemd[1]: Reached target Graphical Interface.
+ 2月 29 05:12:54 debian systemd[1]: Starting Update UTMP about System Runlevel Changes...
+ 2月 29 05:12:54 debian systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+ 2月 29 05:12:54 debian systemd[1]: Started Update UTMP about System Runlevel Changes.
+ 2月 29 05:12:54 debian systemd[1]: Startup finished in 16.454s (kernel) + 54.499s (userspace) = 1min 10.954s.
+ 2月 29 05:12:54 debian NetworkManager[1031]: <warn>  [1582920774.7926] ndisc[0x564839b73200,"enp0s3"]: failure sending router solicitation: 許可されていない操作です (1)
+ 2月 29 05:12:54 debian dbus-daemon[1030]: [system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service' requested by ':1.17' (uid=1000 pid=1452 comm="/usr/bin/pulseaudio --daemonize=no ")
+ 2月 29 05:12:54 debian systemd[1]: Starting RealtimeKit Scheduling Policy Service...
+ 2月 29 05:12:55 debian dbus-daemon[1030]: [system] Successfully activated service 'org.freedesktop.RealtimeKit1'
+ 2月 29 05:12:55 debian systemd[1]: Started RealtimeKit Scheduling Policy Service.
+ 2月 29 05:12:55 debian rtkit-daemon[1478]: Successfully called chroot.
+ 2月 29 05:12:55 debian rtkit-daemon[1478]: Successfully dropped privileges.
+ 2月 29 05:12:55 debian rtkit-daemon[1478]: Successfully limited resources.
+ 2月 29 05:12:55 debian rtkit-daemon[1478]: Running.
+ 2月 29 05:12:55 debian rtkit-daemon[1478]: Canary thread running.
+ 2月 29 05:12:55 debian rtkit-daemon[1478]: Watchdog thread running.
+ 2月 29 05:12:56 debian systemd[1407]: Started D-Bus User Message Bus.
+ 2月 29 05:12:56 debian kernel: broken atomic modeset userspace detected, disabling atomic
+ 2月 29 05:12:58 debian lightdm[1488]: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+ 2月 29 05:12:58 debian lightdm[1488]: pam_unix(lightdm-autologin:session): session opened for user user by (uid=0)
+ 2月 29 05:12:58 debian systemd-logind[1067]: New session 3 of user user.
+ 2月 29 05:12:58 debian systemd[1]: Started Session 3 of user user.
+ 2月 29 05:12:58 debian systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+ 2月 29 05:13:00 debian pulseaudio[1452]: N: [pulseaudio] alsa-util.c: Disabling timer-based scheduling because running inside a VM.
+ 2月 29 05:13:00 debian rtkit-daemon[1478]: Supervising 0 threads of 0 processes of 1 users.
+ 2月 29 05:13:00 debian rtkit-daemon[1478]: Successfully made thread 1506 of process 1452 owned by '1000' RT at priority 5.
+ 2月 29 05:13:00 debian rtkit-daemon[1478]: Supervising 1 threads of 1 processes of 1 users.
+ 2月 29 05:13:00 debian pulseaudio[1452]: N: [pulseaudio] alsa-util.c: Disabling timer-based scheduling because running inside a VM.
+ 2月 29 05:13:00 debian rtkit-daemon[1478]: Supervising 1 threads of 1 processes of 1 users.
+ 2月 29 05:13:00 debian rtkit-daemon[1478]: Successfully made thread 1507 of process 1452 owned by '1000' RT at priority 5.
+ 2月 29 05:13:00 debian rtkit-daemon[1478]: Supervising 2 threads of 1 processes of 1 users.
+ 2月 29 05:13:00 debian pulseaudio[1452]: E: [alsa-source-Intel ICH] alsa-source.c: ALSA woke us up to read new data from the device, but there was actually nothing to read.
+ 2月 29 05:13:00 debian pulseaudio[1452]: E: [alsa-source-Intel ICH] alsa-source.c: Most likely this is a bug in the ALSA driver 'snd_intel8x0'. Please report this issue to the ALSA developers.
+ 2月 29 05:13:00 debian pulseaudio[1452]: E: [alsa-source-Intel ICH] alsa-source.c: We were woken up with POLLIN set -- however a subsequent snd_pcm_avail() returned 0 or another value < min_avail.
+ 2月 29 05:13:00 debian pulseaudio[1452]: W: [pulseaudio] authkey.c: Failed to open cookie file '/home/user/.config/pulse/cookie': そのようなファイルやディレクトリはありません
+ 2月 29 05:13:00 debian pulseaudio[1452]: W: [pulseaudio] authkey.c: Failed to load authentication key '/home/user/.config/pulse/cookie': そのようなファイルやディレクトリはありません
+ 2月 29 05:13:00 debian pulseaudio[1452]: W: [pulseaudio] authkey.c: Failed to open cookie file '/home/user/.pulse-cookie': そのようなファイルやディレクトリはありません
+ 2月 29 05:13:00 debian pulseaudio[1452]: W: [pulseaudio] authkey.c: Failed to load authentication key '/home/user/.pulse-cookie': そのようなファイルやディレクトリはありません
+ 2月 29 05:13:00 debian systemd[1407]: Started Sound Service.
+ 2月 29 05:13:00 debian systemd[1407]: Reached target Main User Target.
+ 2月 29 05:13:00 debian systemd[1407]: Startup finished in 11.975s.
+ 2月 29 05:13:01 debian sudo[1510]:     user : TTY=unknown ; PWD=/home/user ; USER=root ; COMMAND=/usr/sbin/iptables-restore /home/user/.local/etc/iptables.rule4
+ 2月 29 05:13:01 debian sudo[1510]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ 2月 29 05:13:01 debian sudo[1510]: pam_unix(sudo:session): session closed for user root
+ 2月 29 05:13:01 debian sudo[1512]:     user : TTY=unknown ; PWD=/home/user ; USER=root ; COMMAND=/usr/sbin/ip6tables-restore /home/user/.local/etc/iptables.rule6
+ 2月 29 05:13:01 debian sudo[1512]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ 2月 29 05:13:01 debian sudo[1512]: pam_unix(sudo:session): session closed for user root
+ 2月 29 05:13:01 debian sudo[1523]:     user : TTY=unknown ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/swatchdog -c /home/user/.local/etc/swatch.d/syslog.conf -t /var/log/syslog --daemon
+ 2月 29 05:13:01 debian sudo[1523]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ 2月 29 05:13:05 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Activating via systemd: service name='org.a11y.Bus' unit='at-spi-dbus-bus.service' requested by ':1.3' (uid=1000 pid=1518 comm="uim-toolbar-gtk3-systray ")
+ 2月 29 05:13:05 debian systemd[1407]: Starting Accessibility services bus...
+ 2月 29 05:13:05 debian sudo[1523]: pam_unix(sudo:session): session closed for user root
+ 2月 29 05:13:05 debian sudo[1529]:     user : TTY=unknown ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/swatchdog -c /home/user/.local/etc/swatch.d/xsession.conf -t /home/user/.xsession-errors --daemon
+ 2月 29 05:13:05 debian sudo[1529]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ 2月 29 05:13:05 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Successfully activated service 'org.a11y.Bus'
+ 2月 29 05:13:05 debian systemd[1407]: Started Accessibility services bus.
+ 2月 29 05:13:05 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.5' (uid=1000 pid=1518 comm="uim-toolbar-gtk3-systray ")
+ 2月 29 05:13:05 debian systemd[1407]: Starting Virtual filesystem service...
+ 2月 29 05:13:06 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Successfully activated service 'org.gtk.vfs.Daemon'
+ 2月 29 05:13:06 debian systemd[1407]: Started Virtual filesystem service.
+ 2月 29 05:13:07 debian at-spi-bus-launcher[1535]: dbus-daemon[1535]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=1000 pid=1518 comm="uim-toolbar-gtk3-systray ")
+ 2月 29 05:13:07 debian at-spi-bus-launcher[1535]: dbus-daemon[1535]: Successfully activated service 'org.a11y.atspi.Registry'
+ 2月 29 05:13:07 debian at-spi-bus-launcher[1546]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+ 2月 29 05:13:07 debian sudo[1529]: pam_unix(sudo:session): session closed for user root
+ 2月 29 05:13:07 debian crontab[1552]: (user) LIST (user)
+ 2月 29 05:13:07 debian crontab[1553]: (user) LIST (user)
+ 2月 29 05:13:07 debian sudo[1556]:     user : TTY=unknown ; PWD=/home/user ; USER=root ; COMMAND=/usr/sbin/hdparm -y /dev/sda
+ 2月 29 05:13:07 debian sudo[1556]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ 2月 29 05:13:07 debian sudo[1556]: pam_unix(sudo:session): session closed for user root
+ 2月 29 05:13:09 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Activating service name='org.xfce.Xfconf' requested by ':1.12' (uid=1000 pid=1492 comm="xfce4-session ")
+ 2月 29 05:13:09 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Successfully activated service 'org.xfce.Xfconf'
+ 2月 29 05:13:09 debian xfconfd[1658]: Error parsing xfconf config file "/home/user/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml": Invalid type for <property>: "false"
+ 2月 29 05:13:09 debian systemd[1407]: Started GnuPG cryptographic agent and passphrase cache.
+ 2月 29 05:13:09 debian gpg-agent[1666]: gpg-agent (GnuPG) 2.2.19 starting in supervised mode.
+ 2月 29 05:13:09 debian gpg-agent[1666]: using fd 3 for std socket (/run/user/1000/gnupg/S.gpg-agent)
+ 2月 29 05:13:09 debian gpg-agent[1666]: using fd 4 for browser socket (/run/user/1000/gnupg/S.gpg-agent.browser)
+ 2月 29 05:13:09 debian gpg-agent[1666]: using fd 5 for ssh socket (/run/user/1000/gnupg/S.gpg-agent.ssh)
+ 2月 29 05:13:09 debian gpg-agent[1666]: using fd 6 for extra socket (/run/user/1000/gnupg/S.gpg-agent.extra)
+ 2月 29 05:13:09 debian gpg-agent[1666]: listening on: std=3 extra=6 browser=4 ssh=5
+ 2月 29 05:13:10 debian dbus-daemon[1683]: [session uid=0 pid=1678] Activating service name='org.freedesktop.Notifications' requested by ':1.0' (uid=0 pid=1672 comm="notify-send -i /usr/share/icons/Adwaita/24x24/lega")
+ 2月 29 05:13:10 debian dbus-daemon[1683]: [session uid=0 pid=1678] Activating service name='org.xfce.Xfconf' requested by ':1.1' (uid=0 pid=1688 comm="/usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-noti")
+ 2月 29 05:13:10 debian dbus-daemon[1683]: [session uid=0 pid=1678] Successfully activated service 'org.xfce.Xfconf'
+ 2月 29 05:13:11 debian dbus-daemon[1683]: [session uid=0 pid=1678] Activating service name='org.gtk.vfs.Daemon' requested by ':1.1' (uid=0 pid=1688 comm="/usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-noti")
+ 2月 29 05:13:11 debian dbus-daemon[1683]: [session uid=0 pid=1678] Successfully activated service 'org.gtk.vfs.Daemon'
+ 2月 29 05:13:11 debian dbus-daemon[1683]: [session uid=0 pid=1678] Successfully activated service 'org.freedesktop.Notifications'
+ 2月 29 05:13:11 debian xfce4-notifyd[1688]: Failed to set text 'Feb 29 05:13:09 localhost xfconfd[1658]: Error parsing xfconf config file /home/user/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml: Invalid type for <property>: false' from markup due to error parsing markup: 1 行の 196 文字目でエラー: Element “markup” was closed, but the currently open element is “property”
+ 2月 29 05:13:13 debian systemd[1]: systemd-hostnamed.service: Succeeded.
+ 2月 29 05:13:18 debian dbus-daemon[1030]: [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service' requested by ':1.34' (uid=1000 pid=1711 comm="xfsettingsd ")
+ 2月 29 05:13:18 debian systemd[1]: Starting Daemon for power management...
+ 2月 29 05:13:27 debian dbus-daemon[1030]: [system] Successfully activated service 'org.freedesktop.UPower'
+ 2月 29 05:13:27 debian systemd[1]: Started Daemon for power management.
+ 2月 29 05:13:42 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Activating service name='org.freedesktop.thumbnails.Thumbnailer1' requested by ':1.25' (uid=1000 pid=1750 comm="xfdesktop ")
+ 2月 29 05:13:43 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Activating service name='ca.desrt.dconf' requested by ':1.27' (uid=1000 pid=1764 comm="light-locker ")
+ 2月 29 05:13:43 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Successfully activated service 'ca.desrt.dconf'
+ 2月 29 05:13:43 debian polkitd(authority=local)[1056]: Registered Authentication Agent for unix-session:3 (system bus name :1.37 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale ja_JP.UTF-8)
+ 2月 29 05:13:45 debian dbus-daemon[1030]: [system] Activating via systemd: service name='org.freedesktop.ColorManager' unit='colord.service' requested by ':1.38' (uid=1000 pid=1784 comm="xiccd ")
+ 2月 29 05:13:45 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Activating via systemd: service name='org.freedesktop.Notifications' unit='xfce4-notifyd.service' requested by ':1.32' (uid=1000 pid=1785 comm="xfce4-power-manager ")
+ 2月 29 05:13:45 debian systemd[1]: Starting Manage, Install and Generate Color Profiles...
+ 2月 29 05:13:45 debian systemd[1407]: Starting XFCE notifications service...
+ 2月 29 05:13:45 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Successfully activated service 'org.freedesktop.Notifications'
+ 2月 29 05:13:45 debian systemd[1407]: Started XFCE notifications service.
+ 2月 29 05:13:46 debian dbus-daemon[1030]: [system] Successfully activated service 'org.freedesktop.ColorManager'
+ 2月 29 05:13:46 debian systemd[1]: Started Manage, Install and Generate Color Profiles.
+ 2月 29 05:13:52 debian kernel: iptables denied: IN=enp0s3 OUT= MAC= SRC=10.0.2.15 DST=10.0.2.255 LEN=44 TOS=0x00 PREC=0x00 TTL=64 ID=34678 DF PROTO=UDP SPT=8612 DPT=8612 LEN=24 
+ 2月 29 05:13:52 debian kernel: iptables denied: IN=enp0s3 OUT= MAC= SRC=10.0.2.15 DST=10.0.2.255 LEN=44 TOS=0x00 PREC=0x00 TTL=64 ID=34679 DF PROTO=UDP SPT=8612 DPT=8610 LEN=24 
+ 2月 29 05:13:52 debian kernel: iptables denied: IN=enp0s3 OUT= MAC= SRC=10.0.2.15 DST=10.0.2.255 LEN=44 TOS=0x00 PREC=0x00 TTL=64 ID=34680 DF PROTO=UDP SPT=8612 DPT=8612 LEN=24 
+ 2月 29 05:13:52 debian kernel: iptables denied: IN=enp0s3 OUT= MAC= SRC=10.0.2.15 DST=10.0.2.255 LEN=44 TOS=0x00 PREC=0x00 TTL=64 ID=34681 DF PROTO=UDP SPT=8612 DPT=8610 LEN=24 
+ 2月 29 05:13:56 debian kernel: iptables denied: IN=enp0s3 OUT= MAC= SRC=10.0.2.15 DST=255.255.255.255 LEN=101 TOS=0x00 PREC=0x00 TTL=64 ID=37204 DF PROTO=UDP SPT=51499 DPT=161 LEN=81 
+ 2月 29 05:13:56 debian xfce4-notifyd[1688]: Failed to set text 'Feb 29 05:13:11 localhost xfce4-notifyd[1688]: Failed to set text 'Feb 29 05:13:09 localhost xfconfd[1658]: Error parsing xfconf config file /home/user/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml: Invalid type for <property>: false' from markup due to error parsing markup: 1 行の 196 文字目でエラー: Element “markup” was closed, but the currently open element is “property”' from markup due to error parsing markup: 1 行の 423 文字目でエラー: Element “markup” was closed, but the currently open element is “property”
+ 2月 29 05:13:58 debian NetworkManager[1031]: <info>  [1582920838.0667] agent-manager: agent[c67f0478448778a1,:1.40/org.freedesktop.nm-applet/1000]: agent registered
+ 2月 29 05:14:01 debian xfce4-notifyd[1688]: Failed to set text 'Feb 29 05:13:56 localhost xfce4-notifyd[1688]: Failed to set text 'Feb 29 05:13:11 localhost xfce4-notifyd[1688]: Failed to set text 'Feb 29 05:13:09 localhost xfconfd[1658]: Error parsing xfconf config file /home/user/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml: Invalid type for <property>: false' from markup due to error parsing markup: 1 行の 196 文字目でエラー: Element “markup” was closed, but the currently open element is “property”' from markup due to error parsing markup: 1 行の 423 文字目でエラー: Element “markup” was closed, but the currently open element is “property”' from markup due to error parsing markup: 1 行の 650 文字目でエラー: Element “markup” was closed, but the currently open element is “property”
+ 2月 29 05:14:07 debian kernel: iptables denied: IN=enp0s3 OUT= MAC= SRC=10.0.2.15 DST=255.255.255.255 LEN=43 TOS=0x00 PREC=0x00 TTL=64 ID=37878 DF PROTO=UDP SPT=54853 DPT=3289 LEN=23 
+ 2月 29 05:14:07 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.25' (uid=1000 pid=1750 comm="xfdesktop ")
+ 2月 29 05:14:07 debian systemd[1407]: Starting Virtual filesystem metadata service...
+ 2月 29 05:14:07 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Activating via systemd: service name='org.gtk.vfs.UDisks2VolumeMonitor' unit='gvfs-udisks2-volume-monitor.service' requested by ':1.25' (uid=1000 pid=1750 comm="xfdesktop ")
+ 2月 29 05:14:07 debian systemd[1407]: Starting Virtual filesystem service - disk device monitor...
+ 2月 29 05:14:08 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Successfully activated service 'org.gtk.vfs.Metadata'
+ 2月 29 05:14:08 debian systemd[1407]: Started Virtual filesystem metadata service.
+ 2月 29 05:14:10 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'
+ 2月 29 05:14:10 debian systemd[1407]: Started Virtual filesystem service - disk device monitor.
+ 2月 29 05:14:34 debian org.freedesktop.thumbnails.Thumbnailer1[1760]: Registered thumbnailer atril-thumbnailer -s %s %u %o
+ 2月 29 05:14:34 debian org.freedesktop.thumbnails.Thumbnailer1[1760]: Registered thumbnailer /usr/bin/gdk-pixbuf-thumbnailer -s %s %u %o
+ 2月 29 05:14:34 debian org.freedesktop.thumbnails.Thumbnailer1[1760]: Registered thumbnailer /usr/bin/gdk-pixbuf-thumbnailer -s %s %u %o
+ 2月 29 05:14:34 debian dbus-daemon[1481]: [session uid=1000 pid=1481] Successfully activated service 'org.freedesktop.thumbnails.Thumbnailer1'
+ 2月 29 05:15:10 debian sudo[1886]:     user : TTY=pts/0 ; PWD=/home/user ; USER=root ; COMMAND=/usr/bin/journalctl
+ 2月 29 05:15:10 debian sudo[1886]: pam_unix(sudo:session): session opened for user root by (uid=0)
+ 2月 29 05:15:28 debian sudo[1886]: pam_unix(sudo:session): session closed for user root
+ 2月 29 05:16:31 debian crontab[1892]: (user) LIST (user)
+ 2月 29 05:17:01 debian CRON[1894]: pam_unix(cron:session): session opened for user root by (uid=0)
+ 2月 29 05:17:01 debian CRON[1895]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+ 2月 29 05:17:01 debian CRON[1894]: pam_unix(cron:session): session closed for user root
+ 2月 29 05:25:03 debian kernel: iptables denied: IN=enp0s3 OUT= MAC=08:00:27:3b:d8:62:52:54:00:12:35:02:08:00 SRC=13.114.40.48 DST=10.0.2.15 LEN=40 TOS=0x00 PREC=0x00 TTL=255 ID=770 PROTO=TCP SPT=443 DPT=37972 WINDOW=0 RES=0x00 ACK RST URGP=0 
+ 2月 29 05:25:35 debian systemd-logind[1067]: System is powering down.
+ 2月 29 05:25:36 debian lightdm[1488]: pam_unix(lightdm-autologin:session): session closed for user user
+ 2月 29 05:25:36 debian at-spi-bus-launcher[1546]: X connection to :0 broken (explicit kill or server shutdown).
+ 2月 29 05:25:36 debian org.gtk.vfs.Daemon[1699]: A connection to the bus can't be made
+ 2月 29 05:25:36 debian org.freedesktop.Notifications[1688]: 他の通知デーモンが起動しているため、終了します。
+ 2月 29 05:25:36 debian systemd[1]: Stopping Session 1 of user user.
+ 2月 29 05:25:36 debian xfconfd[1693]: Name org.xfce.Xfconf lost on the message dbus, exiting.
+ 2月 29 05:25:36 debian systemd[1]: Stopping Session 3 of user user.
+ 2月 29 05:25:36 debian systemd[1]: Stopped target Graphical Interface.
+ 2月 29 05:25:36 debian systemd[1]: Stopped target Multi-User System.
+ 2月 29 05:25:36 debian systemd[1]: Stopped target Login Prompts.
+ 2月 29 05:25:36 debian systemd[1]: Stopped target Sound Card.
+ 2月 29 05:25:36 debian systemd[1]: Stopped target Timers.
+ 2月 29 05:25:36 debian ModemManager[1024]: <info>  Caught signal, shutting down...
+ 2月 29 05:25:36 debian systemd[1]: anacron.timer: Succeeded.
+ 2月 29 05:25:36 debian systemd[1]: Stopped Trigger anacron every hour.
+ 2月 29 05:25:36 debian unknown[1796]: xfce4-notifyd: Fatal IO error 11 (リソースが一時的に利用できません) on X server :0.
+ 2月 29 05:25:36 debian systemd[1407]: xfce4-notifyd.service: Main process exited, code=exited, status=1/FAILURE
+ 2月 29 05:25:36 debian kernel: iptables denied: IN=enp0s3 OUT= MAC= SRC=10.0.2.15 DST=224.0.0.251 LEN=214 TOS=0x00 PREC=0x00 TTL=255 ID=29571 DF PROTO=UDP SPT=5353 DPT=5353 LEN=194 
+ 2月 29 05:25:36 debian systemd[1407]: xfce4-notifyd.service: Failed with result 'exit-code'.
+ 2月 29 05:25:36 debian avahi-daemon[1028]: Got SIGTERM, quitting.
+ 2月 29 05:25:36 debian systemd[1]: apt-daily-upgrade.timer: Succeeded.
+ 2月 29 05:25:36 debian avahi-daemon[1028]: Leaving mDNS multicast group on interface enp0s3.IPv6 with address fe80::abee:5da2:47c6:50ec.
+ 2月 29 05:25:36 debian systemd[1]: Stopped Daily apt upgrade and clean activities.
+ 2月 29 05:25:36 debian avahi-daemon[1028]: Leaving mDNS multicast group on interface enp0s3.IPv4 with address 10.0.2.15.
+ 2月 29 05:25:36 debian systemd[1]: apt-daily.timer: Succeeded.
+ 2月 29 05:25:36 debian ModemManager[1024]: <info>  ModemManager is shut down
+ 2月 29 05:25:36 debian systemd[1]: Stopped Daily apt download activities.
+ 2月 29 05:25:36 debian avahi-daemon[1028]: avahi-daemon 0.7 exiting.
+ 2月 29 05:25:36 debian systemd[1]: e2scrub_all.timer: Succeeded.
+ 2月 29 05:25:36 debian polkitd(authority=local)[1056]: Unregistered Authentication Agent for unix-session:3 (system bus name :1.37, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale ja_JP.UTF-8) (disconnected from bus)
+ 2月 29 05:25:36 debian systemd[1]: Stopped Periodic ext4 Online Metadata Check for All Filesystems.
+ 2月 29 05:25:36 debian systemd[1]: logrotate.timer: Succeeded.
+ 2月 29 05:25:36 debian systemd[1]: Stopped Daily rotation of log files.
+ 2月 29 05:25:36 debian systemd[1]: exim4-base.timer: Succeeded.
+ 2月 29 05:25:36 debian systemd[1]: Stopped Daily exim4-base housekeeping.
+ 2月 29 05:25:36 debian systemd[1]: man-db.timer: Succeeded.
+ 2月 29 05:25:36 debian rsyslogd[1036]: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="1036" x-info="https://www.rsyslog.com"] exiting on signal 15.
+ 2月 29 05:25:36 debian systemd[1]: Stopped Daily man-db regeneration.
+ 2月 29 05:25:36 debian systemd[1]: systemd-tmpfiles-clean.timer: Succeeded.
+ 2月 29 05:25:36 debian systemd[1]: Stopped Daily Cleanup of Temporary Directories.
+ 2月 29 05:25:36 debian systemd[1]: systemd-rfkill.socket: Succeeded.
+ 2月 29 05:25:36 debian systemd[1]: Closed Load/Save RF Kill Switch Status /dev/rfkill Watch.
+ 2月 29 05:25:36 debian systemd[1]: Stopping Modem Manager...
+ 2月 29 05:25:36 debian systemd[1]: Stopping Save/Restore Sound Card State...
+ 2月 29 05:25:36 debian systemd[1]: Stopping Deferred execution scheduler...
+ 2月 29 05:25:36 debian systemd[1]: Stopping Avahi mDNS/DNS-SD Stack...
+ 2月 29 05:25:36 debian systemd[1]: Stopping Manage, Install and Generate Color Profiles...
+ 2月 29 05:25:36 debian NetworkManager[1031]: <info>  [1582921536.6909] modem-manager: ModemManager no longer available
+ 2月 29 05:25:36 debian systemd[1]: Stopping Regular background program processing daemon...
+ 2月 29 05:25:36 debian systemd[1]: Stopping LSB: exim Mail Transport Agent...
+ 2月 29 05:25:36 debian systemd[1]: Stopping Getty on tty1...
+ 2月 29 05:25:36 debian systemd[1]: Stopping LSB: disk temperature monitoring daemon...
+ 2月 29 05:25:36 debian systemd[1]: Stopping Light Display Manager...
+ 2月 29 05:25:36 debian systemd[1]: lm-sensors.service: Succeeded.
+ 2月 29 05:25:36 debian systemd[1]: Stopped Initialize hardware monitoring sensors.
+ 2月 29 05:25:36 debian systemd[1]: Stopping Authorization Manager...
+ 2月 29 05:25:36 debian systemd[1]: Stopping System Logging Service...
+ 2月 29 05:25:36 debian systemd[1]: Stopping RealtimeKit Scheduling Policy Service...
+ 2月 29 05:25:36 debian systemd[1]: Stopping Load/Save Random Seed...
+ 2月 29 05:25:36 debian systemd[1]: Stopping Disk Manager...
+ 2月 29 05:25:36 debian systemd[1]: Stopping Daemon for power management...
+ 2月 29 05:25:36 debian udisksd[1039]: udisks daemon version 2.8.4 exiting
+ 2月 29 05:25:37 debian systemd[1]: ModemManager.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Modem Manager.
+ 2月 29 05:25:37 debian systemd[1]: avahi-daemon.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Avahi mDNS/DNS-SD Stack.
+ 2月 29 05:25:37 debian systemd[1]: cron.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Regular background program processing daemon.
+ 2月 29 05:25:37 debian systemd[1]: rsyslog.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped System Logging Service.
+ 2月 29 05:25:37 debian systemd[1]: udisks2.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Disk Manager.
+ 2月 29 05:25:37 debian systemd[1]: atd.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Deferred execution scheduler.
+ 2月 29 05:25:37 debian systemd[1]: polkit.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Authorization Manager.
+ 2月 29 05:25:37 debian systemd[1]: getty@tty1.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Getty on tty1.
+ 2月 29 05:25:37 debian systemd[1]: rtkit-daemon.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped RealtimeKit Scheduling Policy Service.
+ 2月 29 05:25:37 debian systemd[1]: upower.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Daemon for power management.
+ 2月 29 05:25:37 debian systemd[1]: colord.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Manage, Install and Generate Color Profiles.
+ 2月 29 05:25:37 debian systemd[1]: alsa-restore.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Save/Restore Sound Card State.
+ 2月 29 05:25:37 debian systemd[1]: hddtemp.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped LSB: disk temperature monitoring daemon.
+ 2月 29 05:25:37 debian systemd[1]: systemd-random-seed.service: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Load/Save Random Seed.
+ 2月 29 05:25:37 debian systemd[1]: session-3.scope: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Session 3 of user user.
+ 2月 29 05:25:37 debian systemd[1]: session-1.scope: Succeeded.
+ 2月 29 05:25:37 debian systemd[1]: Stopped Session 1 of user user.
+ 2月 29 05:25:37 debian systemd-logind[1067]: Session 3 logged out. Waiting for processes to exit.
+ 2月 29 05:25:37 debian systemd-logind[1067]: Session 1 logged out. Waiting for processes to exit.
+ 2月 29 05:25:37 debian pulseaudio[1452]: E: [alsa-sink-Intel ICH] alsa-sink.c: ALSA woke us up to write new data to the device, but there was actually nothing to write.
+ 2月 29 05:25:37 debian pulseaudio[1452]: E: [alsa-sink-Intel ICH] alsa-sink.c: Most likely this is a bug in the ALSA driver 'snd_intel8x0'. Please report this issue to the ALSA developers.
+ 2月 29 05:25:37 debian pulseaudio[1452]: E: [alsa-sink-Intel ICH] alsa-sink.c: We were woken up with POLLOUT set -- however a subsequent snd_pcm_avail() returned 0 or another value < min_avail.
+ 2月 29 05:25:37 debian systemd-logind[1067]: Removed session 3.
+ 2月 29 05:25:37 debian systemd[1]: Removed slice system-getty.slice.
+ 2月 29 05:25:37 debian systemd[1]: Stopping Login Service...
+ 2月 29 05:25:38 debian systemd[1]: Stopping User Manager for UID 1000...
+ 2月 29 05:25:38 debian exim4[2025]: Stopping MTA: exim4_listener.
+ 2月 29 05:25:38 debian systemd[1]: exim4.service: Succeeded.
+ 2月 29 05:25:38 debian systemd[1407]: pulseaudio.service: Main process exited, code=killed, status=9/KILL
+ 2月 29 05:25:38 debian systemd[1]: Stopped LSB: exim Mail Transport Agent.
+ 2月 29 05:25:38 debian systemd[1407]: pulseaudio.service: Failed with result 'signal'.
+ 2月 29 05:25:38 debian systemd[1407]: Stopped Sound Service.
+ 2月 29 05:25:38 debian systemd[1407]: Stopped target Main User Target.
+ 2月 29 05:25:38 debian systemd[1407]: Stopping Accessibility services bus...
+ 2月 29 05:25:38 debian systemd[1]: Stopped target Network is Online.
+ 2月 29 05:25:38 debian gvfsd[1538]: A connection to the bus can't be made
+ 2月 29 05:25:38 debian xfconfd[1658]: Name org.xfce.Xfconf lost on the message dbus, exiting.
+ 2月 29 05:25:38 debian systemd[1407]: Stopping D-Bus User Message Bus...
+ 2月 29 05:25:38 debian gvfsd[1841]: A connection to the bus can't be made
+ 2月 29 05:25:38 debian gpg-agent[1666]: SIGTERM received - shutting down ...
+ 2月 29 05:25:38 debian gpg-agent[1666]: gpg-agent (GnuPG) 2.2.19 停止しました
+ 2月 29 05:25:38 debian systemd[1]: Stopped target System Time Synchronized.
+ 2月 29 05:25:38 debian systemd[1]: Stopped target System Time Set.
+ 2月 29 05:25:38 debian systemd[1]: NetworkManager-wait-online.service: Succeeded.
+ 2月 29 05:25:38 debian systemd[1]: Stopped Network Manager Wait Online.
+ 2月 29 05:25:38 debian systemd[1]: systemd-logind.service: Succeeded.
+ 2月 29 05:25:38 debian systemd[1407]: Stopping GnuPG cryptographic agent and passphrase cache...
+ 2月 29 05:25:38 debian systemd[1407]: Stopping Virtual filesystem service...
+ 2月 29 05:25:38 debian systemd[1407]: Stopping Virtual filesystem metadata service...
+ 2月 29 05:25:38 debian systemd[1407]: Stopping Virtual filesystem service - disk device monitor...
+ 2月 29 05:25:38 debian systemd[1407]: gvfs-daemon.service: Succeeded.
+ 2月 29 05:25:38 debian systemd[1407]: Stopped Virtual filesystem service.
+ 2月 29 05:25:38 debian systemd[1]: Stopped Login Service.
+ 2月 29 05:25:38 debian systemd[1407]: gpg-agent.service: Succeeded.
+ 2月 29 05:25:38 debian systemd[1407]: Stopped GnuPG cryptographic agent and passphrase cache.
+ 2月 29 05:25:38 debian systemd[1407]: dbus.service: Succeeded.
+ 2月 29 05:25:38 debian systemd[1407]: Stopped D-Bus User Message Bus.
+ 2月 29 05:25:38 debian systemd[1407]: gvfs-metadata.service: Succeeded.
+ 2月 29 05:25:38 debian systemd[1407]: Stopped Virtual filesystem metadata service.
+ 2月 29 05:25:38 debian systemd[1407]: gvfs-udisks2-volume-monitor.service: Succeeded.
+ 2月 29 05:25:38 debian systemd[1407]: Stopped Virtual filesystem service - disk device monitor.
+ 2月 29 05:25:38 debian systemd[1]: lightdm.service: Succeeded.
+ 2月 29 05:25:38 debian systemd[1]: Stopped Light Display Manager.
+ 2月 29 05:25:38 debian systemd[1]: Starting Show Plymouth Power Off Screen...
+ 2月 29 05:25:38 debian systemd[1]: Received SIGRTMIN+20 from PID 2045 (plymouthd).
+ 2月 29 05:25:38 debian systemd[1]: Started Show Plymouth Power Off Screen.
+ 2月 29 05:27:08 debian systemd[1407]: at-spi-dbus-bus.service: State 'stop-sigterm' timed out. Killing.
+ 2月 29 05:27:08 debian systemd[1407]: at-spi-dbus-bus.service: Killing process 1528 (at-spi-bus-laun) with signal SIGKILL.
+ 2月 29 05:27:08 debian systemd[1407]: at-spi-dbus-bus.service: Killing process 1531 (gmain) with signal SIGKILL.
+ 2月 29 05:27:08 debian systemd[1407]: at-spi-dbus-bus.service: Killing process 1532 (dconf worker) with signal SIGKILL.
+ 2月 29 05:27:08 debian systemd[1407]: at-spi-dbus-bus.service: Killing process 1534 (gdbus) with signal SIGKILL.
+ 2月 29 05:27:08 debian systemd[1407]: at-spi-dbus-bus.service: Main process exited, code=killed, status=9/KILL
+ 2月 29 05:27:08 debian systemd[1407]: at-spi-dbus-bus.service: Failed with result 'timeout'.
+ 2月 29 05:27:08 debian systemd[1407]: Stopped Accessibility services bus.
+ 2月 29 05:27:08 debian systemd[1407]: Stopped target Basic System.
+ 2月 29 05:27:08 debian systemd[1407]: Stopped target Paths.
+ 2月 29 05:27:08 debian systemd[1407]: Stopped target Sockets.
+ 2月 29 05:27:08 debian systemd[1407]: Stopped target Timers.
+ 2月 29 05:27:08 debian systemd[1407]: dbus.socket: Succeeded.
+ 2月 29 05:27:08 debian systemd[1407]: Closed D-Bus User Message Bus Socket.
+ 2月 29 05:27:08 debian systemd[1407]: dirmngr.socket: Succeeded.
+ 2月 29 05:27:08 debian systemd[1407]: Closed GnuPG network certificate management daemon.
+ 2月 29 05:27:08 debian systemd[1407]: gpg-agent-browser.socket: Succeeded.
+ 2月 29 05:27:08 debian systemd[1407]: Closed GnuPG cryptographic agent and passphrase cache (access for web browsers).
+ 2月 29 05:27:08 debian systemd[1407]: gpg-agent-extra.socket: Succeeded.
+ 2月 29 05:27:08 debian systemd[1407]: Closed GnuPG cryptographic agent and passphrase cache (restricted).
+ 2月 29 05:27:08 debian systemd[1407]: gpg-agent-ssh.socket: Succeeded.
+ 2月 29 05:27:08 debian systemd[1407]: Closed GnuPG cryptographic agent (ssh-agent emulation).
+ 2月 29 05:27:08 debian systemd[1407]: gpg-agent.socket: Succeeded.
+ 2月 29 05:27:08 debian systemd[1407]: Closed GnuPG cryptographic agent and passphrase cache.
+ 2月 29 05:27:08 debian systemd[1407]: pk-debconf-helper.socket: Succeeded.
+ 2月 29 05:27:08 debian systemd[1407]: Closed debconf communication socket.
+ 2月 29 05:27:08 debian systemd[1407]: pulseaudio.socket: Succeeded.
+ 2月 29 05:27:08 debian systemd[1407]: Closed Sound System.
+ 2月 29 05:27:08 debian systemd[1407]: Reached target Shutdown.
+ 2月 29 05:27:08 debian systemd[1407]: systemd-exit.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1407]: Started Exit the Session.
+ 2月 29 05:27:08 debian systemd[1407]: Reached target Exit the Session.
+ 2月 29 05:27:08 debian systemd[1408]: pam_unix(systemd-user:session): session closed for user user
+ 2月 29 05:27:08 debian systemd[1]: user@1000.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped User Manager for UID 1000.
+ 2月 29 05:27:08 debian systemd[1]: Stopping User Runtime Directory /run/user/1000...
+ 2月 29 05:27:08 debian systemd[1]: run-user-1000.mount: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Unmounted /run/user/1000.
+ 2月 29 05:27:08 debian systemd[1]: user-runtime-dir@1000.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped User Runtime Directory /run/user/1000.
+ 2月 29 05:27:08 debian systemd[1]: Removed slice User Slice of UID 1000.
+ 2月 29 05:27:08 debian systemd[1]: Stopping Permit User Sessions...
+ 2月 29 05:27:08 debian systemd[1]: systemd-user-sessions.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped Permit User Sessions.
+ 2月 29 05:27:08 debian systemd[1]: Stopped target Network.
+ 2月 29 05:27:08 debian systemd[1]: Stopped target Remote File Systems.
+ 2月 29 05:27:08 debian NetworkManager[1031]: <info>  [1582921628.3893] caught SIGTERM, shutting down normally.
+ 2月 29 05:27:08 debian systemd[1]: Stopping Network Manager...
+ 2月 29 05:27:08 debian systemd[1]: Stopping Raise network interfaces...
+ 2月 29 05:27:08 debian NetworkManager[1031]: <info>  [1582921628.4171] dhcp4 (enp0s3): canceled DHCP transaction
+ 2月 29 05:27:08 debian NetworkManager[1031]: <info>  [1582921628.4180] dhcp4 (enp0s3): state changed bound -> done
+ 2月 29 05:27:08 debian NetworkManager[1031]: <info>  [1582921628.4192] device (enp0s3): DHCPv4: trying to acquire a new lease within 90 seconds
+ 2月 29 05:27:08 debian systemd[1]: Stopping WPA supplicant...
+ 2月 29 05:27:08 debian systemd[1]: wpa_supplicant.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped WPA supplicant.
+ 2月 29 05:27:08 debian NetworkManager[1031]: <info>  [1582921628.4679] manager: NetworkManager state is now CONNECTED_SITE
+ 2月 29 05:27:08 debian dbus-daemon[1030]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.7' (uid=0 pid=1031 comm="/usr/sbin/NetworkManager --no-daemon ")
+ 2月 29 05:27:08 debian dbus-daemon[1030]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.nm-dispatcher.service': Refusing activation, D-Bus is shutting down.
+ 2月 29 05:27:08 debian NetworkManager[1031]: <info>  [1582921628.4907] exiting (success)
+ 2月 29 05:27:08 debian systemd[1]: NetworkManager.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped Network Manager.
+ 2月 29 05:27:08 debian systemd[1]: Stopping D-Bus System Message Bus...
+ 2月 29 05:27:08 debian systemd[1]: dbus.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped D-Bus System Message Bus.
+ 2月 29 05:27:08 debian systemd[1]: Stopped target Basic System.
+ 2月 29 05:27:08 debian systemd[1]: systemd-ask-password-plymouth.path: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped Forward Password Requests to Plymouth Directory Watch.
+ 2月 29 05:27:08 debian systemd[1]: Stopped target Paths.
+ 2月 29 05:27:08 debian systemd[1]: Stopped target Slices.
+ 2月 29 05:27:08 debian systemd[1]: Removed slice User and Session Slice.
+ 2月 29 05:27:08 debian systemd[1]: Stopped target Sockets.
+ 2月 29 05:27:08 debian systemd[1]: avahi-daemon.socket: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Closed Avahi mDNS/DNS-SD Stack Activation Socket.
+ 2月 29 05:27:08 debian systemd[1]: dbus.socket: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Closed D-Bus System Message Bus Socket.
+ 2月 29 05:27:08 debian systemd[1]: syslog.socket: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Closed Syslog Socket.
+ 2月 29 05:27:08 debian systemd[1]: uuidd.socket: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Closed UUID daemon activation socket.
+ 2月 29 05:27:08 debian systemd[1]: Stopped target System Initialization.
+ 2月 29 05:27:08 debian systemd[1]: Stopped target Local Encrypted Volumes.
+ 2月 29 05:27:08 debian systemd[1]: systemd-ask-password-wall.path: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped Forward Password Requests to Wall Directory Watch.
+ 2月 29 05:27:08 debian systemd[1]: Stopping Network Time Synchronization...
+ 2月 29 05:27:08 debian systemd[1]: Stopping Update UTMP about System Boot/Shutdown...
+ 2月 29 05:27:08 debian systemd[1]: systemd-timesyncd.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped Network Time Synchronization.
+ 2月 29 05:27:08 debian systemd[1]: networking.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped Raise network interfaces.
+ 2月 29 05:27:08 debian systemd[1]: systemd-sysctl.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped Apply Kernel Variables.
+ 2月 29 05:27:08 debian systemd[1]: systemd-modules-load.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped Load Kernel Modules.
+ 2月 29 05:27:08 debian systemd[1]: systemd-update-utmp.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped Update UTMP about System Boot/Shutdown.
+ 2月 29 05:27:08 debian systemd[1]: systemd-tmpfiles-setup.service: Succeeded.
+ 2月 29 05:27:08 debian systemd[1]: Stopped Create Volatile Files and Directories.
+ 2月 29 05:27:08 debian systemd[1]: Stopped target Local File Systems.
+ 2月 29 05:27:08 debian systemd[1]: Unmounting /run/live/overlay...
+ 2月 29 05:27:08 debian systemd[1]: Unmounting /run/live/persistence/sda...
+ 2月 29 05:27:08 debian systemd[1]: Unmounting /run/live/persistence/sr0...
+ 2月 29 05:27:08 debian systemd[1]: Unmounting /run/live/rootfs/filesystem.squashfs...
+ 2月 29 05:27:08 debian systemd[1]: Unmounting /tmp...
+ 2月 29 05:27:08 debian umount[2066]: umount: /run/live/persistence/sr0: target is busy.
+ 2月 29 05:27:08 debian systemd[1]: Unmounting /usr/lib/live/mount/overlay...
+ 2月 29 05:27:08 debian systemd[1]: Unmounting /usr/lib/live/mount/persistence/sda...
+ 2月 29 05:27:08 debian systemd[1]: Unmounting /usr/lib/live/mount/rootfs/filesystem.squashfs...
+ 2月 29 05:27:08 debian systemd[1]: Unmounting /var/log/journal...
+ 2月 29 05:27:09 debian umount[2072]: umount: /var/log/journal: target is busy.
+ 2月 29 05:27:09 debian systemd[1]: run-live-overlay.mount: Succeeded.
+ 2月 29 05:27:09 debian systemd[1]: Unmounted /run/live/overlay.
+ 2月 29 05:27:09 debian systemd[1]: run-live-persistence-sda.mount: Succeeded.
+ 2月 29 05:27:09 debian systemd[1]: Unmounted /run/live/persistence/sda.
+ 2月 29 05:27:09 debian systemd[1]: run-live-persistence-sr0.mount: Mount process exited, code=exited, status=32/n/a
+ 2月 29 05:27:09 debian systemd[1]: Failed unmounting /run/live/persistence/sr0.
+ 2月 29 05:27:09 debian systemd[1]: run-live-rootfs-filesystem.squashfs.mount: Succeeded.
+ 2月 29 05:27:09 debian systemd[1]: Unmounted /run/live/rootfs/filesystem.squashfs.
+ 2月 29 05:27:09 debian systemd[1]: tmp.mount: Succeeded.
+ 2月 29 05:27:09 debian systemd[1]: Unmounted /tmp.
+ 2月 29 05:27:09 debian systemd[1]: usr-lib-live-mount-overlay.mount: Succeeded.
+ 2月 29 05:27:09 debian systemd[1]: Unmounted /usr/lib/live/mount/overlay.
+ 2月 29 05:27:09 debian systemd[1]: usr-lib-live-mount-persistence-sda.mount: Succeeded.
+ 2月 29 05:27:09 debian systemd[1]: Unmounted /usr/lib/live/mount/persistence/sda.
+ 2月 29 05:27:09 debian systemd[1]: usr-lib-live-mount-rootfs-filesystem.squashfs.mount: Succeeded.
+ 2月 29 05:27:09 debian systemd[1]: Unmounted /usr/lib/live/mount/rootfs/filesystem.squashfs.
+ 2月 29 05:27:09 debian systemd[1]: var-log-journal.mount: Mount process exited, code=exited, status=32/n/a
+ 2月 29 05:27:09 debian systemd[1]: Failed unmounting /var/log/journal.
+ 2月 29 05:27:09 debian systemd[1]: Unmounting /usr/lib/live/mount...
+ 2月 29 05:27:09 debian systemd[1]: usr-lib-live-mount.mount: Succeeded.
+ 2月 29 05:27:09 debian systemd[1]: Unmounted /usr/lib/live/mount.
+ 2月 29 05:27:09 debian systemd[1]: Stopped target Local File Systems (Pre).
+ 2月 29 05:27:09 debian systemd[1]: Stopped target Swap.
+ 2月 29 05:27:09 debian systemd[1]: Reached target Unmount All Filesystems.
+ 2月 29 05:27:09 debian systemd[1]: systemd-tmpfiles-setup-dev.service: Succeeded.
+ 2月 29 05:27:09 debian systemd[1]: Stopped Create Static Device Nodes in /dev.
+ 2月 29 05:27:09 debian systemd[1]: systemd-sysusers.service: Succeeded.
+ 2月 29 05:27:09 debian systemd[1]: Stopped Create System Users.
+ 2月 29 05:27:09 debian systemd[1]: systemd-remount-fs.service: Succeeded.
+ 2月 29 05:27:09 debian systemd[1]: Stopped Remount Root and Kernel File Systems.
+ 2月 29 05:27:09 debian systemd[1]: Reached target Shutdown.
+ 2月 29 05:27:09 debian systemd[1]: Reached target Final Step.
+ 2月 29 05:27:09 debian systemd[1]: systemd-poweroff.service: Succeeded.
+ 2月 29 05:27:09 debian systemd[1]: Started Power-Off.
+ 2月 29 05:27:09 debian systemd[1]: Reached target Power-Off.
+ 2月 29 05:27:09 debian systemd[1]: Shutting down.
+ 2月 29 05:27:09 debian systemd-shutdown[1]: Syncing filesystems and block devices.
+ 2月 29 05:27:10 debian systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+ 2月 29 05:27:10 debian systemd-journald[521]: Journal stopped
