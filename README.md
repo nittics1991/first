@@ -1,0 +1,2 @@
+# first
+Github入門
